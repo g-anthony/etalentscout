@@ -1,6 +1,6 @@
 <?php 
 
-function mycarebox_styles(){
+function etalentscout_styles(){
 	
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/css/bootstrap.min.css');
 	
@@ -8,9 +8,9 @@ function mycarebox_styles(){
 
 }
 
-add_action('wp_enqueue_scripts', 'mycarebox_styles');
+add_action('wp_enqueue_scripts', 'etalentscout_styles');
 
-function mycarebox_scripts(){
+function etalentscout_scripts(){
 	
 	global $wp_scripts;
 	
@@ -23,6 +23,6 @@ function mycarebox_scripts(){
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), '', true);
 }
 
-add_action('wp_enqueue_scripts', 'mycarebox_scripts');
+add_action('wp_enqueue_scripts', 'etalentscout_scripts');
 
 ?>
