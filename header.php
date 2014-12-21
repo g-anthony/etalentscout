@@ -28,8 +28,15 @@
           <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="LoL Talent Scout Logo" title="LoL Talent Scout Logo"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+          
+          <!--sign up and log in btn's -->
+          <div class="navbar-btns pull-right">
+          		<a class="btn btn-default" href="">Sign up</a>
+         		<a class="btn btn-default" href="">Log in</a>
+          </div>
+      
          
-         <?php 
+		 <?php 
 		 	$args = array(
 				'menu'			=> 'header-menu',
 				'menu_class' 	=> 'nav navbar-nav pull-right',
@@ -37,8 +44,6 @@
 			);
 			wp_nav_menu( $args );
 		 ?>
-         
-         
         </div><!--/.navbar-collapse -->
       </div>
     </nav>

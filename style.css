@@ -15,20 +15,31 @@ body{
 	padding-bottom: 20px;
 }
 
-
-
-
 /* NAVIGATION STYLES
 ==================================== */
 .admin-bar .navbar-fixed-top{margin-top:32px;}
 
 .navbar {min-height: 100px;}
 
-.navbar-brand{height: 85px; width:166px; margin: 0 auto;padding:7.5px}
+.navbar-nav > li > a{ 
+	padding-top: 39.5px;
+	padding-bottom: 39.5px;
+}
+.navbar-btns{
+	margin-left: 100px;
+	padding-top: 33px;
+	padding-bottom:33px;
+}
+
+.navbar-brand{
+	height: 85px;
+	width:166px;
+	padding:7.5px;
+}
 
 .navbar-inverse .navbar-nav > li > a{ color:#FFF;}
 
-.navbar-inverse .navbar-nav > li > a:hover{ background: #c12f22;}
+.navbar-inverse .navbar-nav > li > a:hover{background: #c12f22;}
 
 .navbar-inverse{
 	background-color: #e03627;
