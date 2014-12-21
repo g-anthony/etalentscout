@@ -1,5 +1,17 @@
 <?php 
 
+/* THEME SUPPORT
+=========================== */
+
+add_theme_support( 'menus' );
+
+
+
+
+
+/* GLOBAL STYLES & SCRIPTS
+=============================== */
+
 function etalentscout_styles(){
 	
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/css/bootstrap.min.css');
@@ -24,5 +36,34 @@ function etalentscout_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'etalentscout_scripts');
+
+
+/* REGISTERING MENUS
+========================== */
+
+function register_theme_menus() {
+	
+	register_nav_menus(
+			array(
+				'header-menu'	=> __( 'Header Menu' )
+			)
+	);
+}
+add_action( 'init', 'register_theme_menus' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>

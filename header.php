@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Build/Join Your Ideal Team with LoL Talent Scout">
+    <meta name="author" content="Anthony Rivera & Anthony Gomez">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>LoL Talent Scout - Build/Join Your Ideal Team</title>
     
     <?php wp_head(); ?>
     
@@ -25,18 +25,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="LoL Talent Scout Logo" title="LoL Talent Scout Logo"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+         
+         <?php 
+		 	$args = array(
+				'menu'			=> 'header-menu',
+				'menu_class' 	=> 'nav navbar-nav pull-right',
+				'container'		=> 'false'
+			);
+			wp_nav_menu( $args );
+		 ?>
+         
+         
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
