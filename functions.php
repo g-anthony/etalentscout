@@ -5,10 +5,6 @@
 
 add_theme_support( 'menus' );
 
-
-
-
-
 /* GLOBAL STYLES & SCRIPTS
 =============================== */
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Build/Join Your Ideal Team with LoL Talent Scout">
     <meta name="author" content="Anthony Rivera & Anthony Gomez">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/etalentscout.ico">
 
     <title>LoL Talent Scout - Build/Join Your Ideal Team</title>
     
@@ -31,8 +31,8 @@
           
           <!--sign up and log in btn's -->
           <div class="navbar-btns pull-right">
-          		<a class="btn btn-default" href="">Sign up</a>
-         		<a class="btn btn-default" href="">Log in</a>
+          		<a class="btn btn-clear" href="">Sign up</a>
+         		<a class="btn btn-clear" href="">Log in</a>
           </div>
       
          

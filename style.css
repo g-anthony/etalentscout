@@ -27,8 +27,7 @@ body{
 }
 .navbar-btns{
 	margin-left: 100px;
-	padding-top: 33px;
-	padding-bottom:33px;
+	padding: 25px 0px;
 }
 
 .navbar-brand{
@@ -43,9 +42,15 @@ body{
 
 .navbar-inverse{
 	background-color: #e03627;
-	border-color: #de2c1d;
+	border: none;
 }
 
 .current-menu-item > a{
 	background: #c12f22;
 }
+
+/* SIGN UP / LOG IN STLYES
+=============================== */
+.btn-clear{border: 1px solid #FFF;padding: 14px 20px;color:#FFF;}
+.btn-clear:hover{background: #FFF;color: #e03627;}
+.btn-clear > a:first-child{margin-right:40px;}
