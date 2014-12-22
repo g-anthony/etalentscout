@@ -10,7 +10,6 @@ Version: 1.0
 
 
 body{
-	background-color:#343746;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
@@ -54,3 +53,12 @@ body{
 .btn-clear{border: 1px solid #FFF;padding: 14px 20px;color:#FFF;}
 .btn-clear:hover{background: #FFF;color: #e03627;}
 .btn-clear > a:first-child{margin-right:40px;}
+
+
+/* How it works / made for styles
+==================================== */
+
+.test{
+	background-color:#eef0f1;
+	padding: 60px 0;
+}

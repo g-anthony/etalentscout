@@ -9,24 +9,76 @@
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+
+    <div class="container how-it-works"> 
+      <section class="row">
+      
+      	<h2 class="center">How It Works</h2>
+        
+        <ol class="clearfix">
+        
+        	<li class="col-md-4">
+           		<h3>Heading</h3>
+          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            </li>
+            
+            <li class="col-md-4">
+           		<h3>Heading</h3>
+          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            </li>
+            
+            <li class="col-md-4">
+           		<h3>Heading</h3>
+          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            </li>
+            
+        </ol>
+      </section><!--row-->
+   </div><!--how-it-works-->   
+      
+     
+   <div class="test">
+   <div class="container">   
+      <section class="row ">
+        <div class="col-md-6">
+			<img src="" title="Made for Players"/>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        
+        <div class="col-md-6">
+         <h3>Made For Players</h3>
+         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+         
+			<ul>
+            	<li>
+                	<h3><span class="glyphicon glyphicon-ok-circle"></span>This is a Title</h3>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </section><!--row-->
+      
+      <section class="row ">
+        <div class="col-md-6">
+          	<h3>Made For Teams</h3>
+			<ul>
+            	<li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-      </div>
+        
+        <div class="col-md-6">
+			<img src="" title="Made for Teams"/>
+        </div>
+
+      </section><!--row-->
+      </div><!--container-->
+      </div><!--test-->
+      
+      <div class="container"> 
 
 <?php get_footer(); ?>
