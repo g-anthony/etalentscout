@@ -10,6 +10,8 @@ Version: 1.0
 
 
 body{
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
@@ -58,7 +60,38 @@ body{
 /* How it works / made for styles
 ==================================== */
 
+.block-title{text-align:center;}
+
 .test{
 	background-color:#eef0f1;
 	padding: 60px 0;
 }
+
+.how-it-works ol{
+	counter-reset: li;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.how-it-works li{
+	position: relative;
+	list-style: none;
+}
+
+.how-it-works ol > li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	color: #e03627;
+	text-align: center;
+	font-size: 55px;
+	
+}
+
+.how-it-works h3{
+	font-size:24px;
+	margin-top: 0;
+}
+.how-it-works p{font-size:14px;}

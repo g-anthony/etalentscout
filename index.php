@@ -11,13 +11,10 @@
 
 
 
-    <div class="container how-it-works"> 
+    <div class="container how-it-works">
+      <h2 class="block-title"><span>How It Works</span></h2> 
       <section class="row">
-      
-      	<h2 class="center">How It Works</h2>
-        
         <ol class="clearfix">
-        
         	<li class="col-md-4">
            		<h3>Heading</h3>
           		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -32,7 +29,6 @@
            		<h3>Heading</h3>
           		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </li>
-            
         </ol>
       </section><!--row-->
    </div><!--how-it-works-->   

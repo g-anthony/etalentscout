@@ -11,7 +11,7 @@ add_theme_support( 'menus' );
 function etalentscout_styles(){
 	
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/css/bootstrap.min.css');
-	
+	wp_enqueue_style('font-roboto', 'http://fonts.googleapis.com/css?family=Roboto:500,300');
 	wp_enqueue_style('main_css', get_stylesheet_uri());
 
 }
