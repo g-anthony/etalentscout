@@ -11,28 +11,52 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container how-it-works">
-      <h2 class="section-title"><span>How It Works</span></h2> 
+      <h2 class="title-section"><span>How It Works</span></h2> 
       <section class="row">
         <ol class="clearfix">
         	<li class="col-md-4">
-           		<h3>Heading</h3>
+           		<h3 class="title-secondary">Heading</h3>
           		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </li>
             
             <li class="col-md-4">
-           		<h3>Heading</h3>
+           		<h3 class="title-secondary">Heading</h3>
           		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </li>
             
             <li class="col-md-4">
-           		<h3>Heading</h3>
+           		<h3 class="title-secondary">Heading</h3>
           		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </li>
         </ol>
       </section><!--row-->
    </div><!--how-it-works-->   
       
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
    <div class="test">
    <div class="container">   
