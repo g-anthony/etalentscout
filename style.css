@@ -16,6 +16,12 @@ body{
 	padding-bottom: 20px;
 }
 
+/* TYPOGRAPHY STYLES
+==================================== */
+h1, h2, h3,
+h4, h5, h6{color:#333746;}
+
+
 /* NAVIGATION STYLES
 ==================================== */
 .admin-bar .navbar-fixed-top{margin-top:32px;}
@@ -60,12 +66,36 @@ body{
 /* How it works / made for styles
 ==================================== */
 
-.block-title{text-align:center;}
+.section-title{
+	position:relative;
+	text-align:center;
+	margin-bottom:80px;
+}
+
+.section-title span{
+	background-color: #FFF;
+	position: relative;
+	z-index: 1001;
+	padding: 0 25px;
+}
+
+.section-title:after{
+	content:'';
+	position: absolute;
+	border-bottom: 2px solid #cccdce;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+	z-index: 1000;
+}
 
 .test{
 	background-color:#eef0f1;
 	padding: 60px 0;
 }
+
+.how-it-works{padding:80px 0;}
 
 .how-it-works ol{
 	counter-reset: li;

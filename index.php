@@ -12,7 +12,7 @@
 
 
     <div class="container how-it-works">
-      <h2 class="block-title"><span>How It Works</span></h2> 
+      <h2 class="section-title"><span>How It Works</span></h2> 
       <section class="row">
         <ol class="clearfix">
         	<li class="col-md-4">
