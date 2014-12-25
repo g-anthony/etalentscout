@@ -24,27 +24,36 @@
 
 
 
-    <div class="container how-it-works">
-      <h2 class="title-section"><span>How It Works</span></h2> 
-      <section class="row">
-        <ol class="clearfix">
-        	<li class="col-md-4">
-           		<h3 class="title-secondary">Heading</h3>
-          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </li>
-            
-            <li class="col-md-4">
-           		<h3 class="title-secondary">Heading</h3>
-          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </li>
-            
-            <li class="col-md-4">
-           		<h3 class="title-secondary">Heading</h3>
-          		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </li>
-        </ol>
-      </section><!--row-->
-   </div><!--how-it-works-->   
+    <div class="container">
+    	<div class="how-it-works">
+              <h2 class="title-section"><span>How It Works</span></h2> 
+              <div class="row">
+                <ol class="clearfix">
+                    <li class="col-md-4">
+                    	<img src="<?php echo get_template_directory_uri();?>/img/mac-desktop-icon.png" alt=""/>
+                        <div class="list-content">
+                            <h3 class="title-secondary">Heading</h3>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        </div><!--list-content-->
+                    </li>
+                    
+                    <li class="col-md-4">
+                        <div class="list-content">
+                            <h3 class="title-secondary">Heading</h3>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        </div><!--list-content-->
+                    </li>
+                    
+                    <li class="col-md-4">
+                        <div class="list-content">
+                            <h3 class="title-secondary">Heading</h3>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        </div><!--list-content-->
+                    </li>
+                </ol>
+              </div><!--row-->
+      </div><!--how-it-works-->
+   </div><!--container-->   
       
      
      

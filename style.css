@@ -16,6 +16,8 @@ body{
 	padding-bottom: 20px;
 }
 
+img{max-width:100%;}
+
 /* TYPOGRAPHY STYLES
 ==================================== */
 @font-face{
@@ -118,17 +120,16 @@ h4, h5, h6{
 
 .how-it-works ol{
 	counter-reset: li;
-	margin-left: 0;
-	padding-left: 0;
+	margin:0;
+	padding:0;
 }
 
 .how-it-works li{
 	position: relative;
 	list-style: none;
-	padding:0 0 0 50px;
 }
 
-.how-it-works ol > li:before {
+.how-it-works ol > li .list-content:before {
 	content: counter(li);
 	counter-increment: li;
 	color: #e03627;
@@ -136,7 +137,34 @@ h4, h5, h6{
 	font-family:'Lovelo';
 	font-size: 55px;
 	float:left;
-	margin:-12px 0 0 -35px;
+	margin:-8px 0 0 -45px;
 }
 
-.how-it-works h3{margin-top: 0;}
+.how-it-works h3{margin-top:0;}
+
+.how-it-works .list-content{margin-left:45px;}
+
+.img{
+	background-color:red;
+	height:334px;
+	width:100%;
+}
+
+
+@media (min-width: 400px) {
+	.how-it-works li{ margin-top:40px; }
+	.how-it-works li:first-child{ margin-top:0; }
+	
+}
+
+
+@media (min-width: 768px) {
+	
+
+}
+
+
+@media (min-width: 992px) {
+	.how-it-works li{ margin-top:0; }
+	
+}
