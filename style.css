@@ -7,8 +7,6 @@ Description: Theme for loltalentscout.com
 Version: 1.0
 */
 
-
-
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
@@ -28,6 +26,8 @@ img{max-width:100%;}
 h1, h2, h3, 
 h4, h5, h6{	
 	font-family:'Lovelo';
+	font-weight:bold;
+	line-height:1.5;
 	color:#333746;
 }
 
@@ -61,8 +61,6 @@ h4, h5, h6{
 .title-section-left{}
 
 .title-section-right{}
-
-
 
 
 /* NAVIGATION STYLES
@@ -106,10 +104,8 @@ h4, h5, h6{
 .btn-clear > a:first-child{margin-right:40px;}
 
 
-/* How it works / made for styles
+/* How it works section
 ==================================== */
-
-
 
 .test{
 	background-color:#eef0f1;
@@ -137,34 +133,89 @@ h4, h5, h6{
 	font-family:'Lovelo';
 	font-size: 55px;
 	float:left;
-	margin:-8px 0 0 -45px;
+	margin:-14px 0 0 -45px;
 }
 
 .how-it-works h3{margin-top:0;}
 
-.how-it-works .list-content{margin-left:45px;}
 
-.img{
-	background-color:red;
-	height:334px;
-	width:100%;
+
+@media (min-width: 200px) {
+	.title-section span{ padding:0; }
+	
+	.title-section:after{ border-bottom:0; }
+	
+	h2{font-size:26px;}
+	
+	h3{font-size:20px;}
+	
+	
+	/* How it works section 200px
+	==================================== */
+	.how-it-works li{ margin-top:60px; }
+	.how-it-works li:first-child{ margin-top:0; }
+	
+	.how-it-works .list-icon{margin-bottom:40px;}
+	.how-it-works .list-content{margin-left:45px;}
+	
+	.how-it-works ol > li .list-content:before{
+		font-size:50px;
+		margin:-8px 0 0 -45px;
+	}
+	
 }
 
 
-@media (min-width: 400px) {
-	.how-it-works li{ margin-top:40px; }
-	.how-it-works li:first-child{ margin-top:0; }
+@media (min-width: 580px){
+	
+	.title-section span{ padding:0 25px; }
+	
+	.title-section:after{ border-bottom: 2px solid #cccdce; }
+	
+	
+	/* How it works section 580px
+	==================================== */
+	.how-it-works .list-icon{
+		float:left;
+		width:41.59%;
+		margin-bottom:0;
+	}
+	
+	.how-it-works .list-content{
+		float:left;
+		width:46.65%;
+		margin-left:11.75%;	
+	}
 	
 }
 
 
 @media (min-width: 768px) {
 	
+	h2{font-size:30px;}
+	h3{font-size:22px;}
 
 }
 
 
 @media (min-width: 992px) {
+	
+	/* How it works section 992px
+	==================================== */
 	.how-it-works li{ margin-top:0; }
+	
+	.how-it-works .list-icon{
+		float:none;
+		width:100%;
+		margin-bottom:40px;	
+	}
+	
+	.how-it-works .list-content{
+		float:none;
+		width:auto;
+		margin-left:45px;
+	}
+	
+	.how-it-works ol > li .list-content:before{ font-size:55px; }
 	
 }

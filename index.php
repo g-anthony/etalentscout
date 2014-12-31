@@ -29,27 +29,50 @@
               <h2 class="title-section"><span>How It Works</span></h2> 
               <div class="row">
                 <ol class="clearfix">
+                
                     <li class="col-md-4">
-                    	<img src="<?php echo get_template_directory_uri();?>/img/mac-desktop-icon.png" alt=""/>
-                        <div class="list-content">
-                            <h3 class="title-secondary">Heading</h3>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        </div><!--list-content-->
-                    </li>
+                    	<div class="clearfix">
+                            <div class="list-icon">
+                                <img src="<?php echo get_template_directory_uri();?>/img/mac-desktop-icon.png" alt=""/>
+                            </div><!--list-icon-->
+                            
+                            <div class="list-content">
+                                <h3 class="title-secondary">Create a Free Profile</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus neque. Curabitur at risus quis eros eleifend
+                                iaculis.</p>
+                            </div><!--list-content-->
+                        </div><!--clearfix-->
+                    </li><!--col-md-4-->
                     
                     <li class="col-md-4">
-                        <div class="list-content">
-                            <h3 class="title-secondary">Heading</h3>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        </div><!--list-content-->
-                    </li>
+                    	<div class="clearfix">
+                            <div class="list-icon">
+                                <img src="<?php echo get_template_directory_uri();?>/img/app-tools-icon.png" alt=""/>
+                            </div><!--list-icon-->
+                            
+                            <div class="list-content">
+                                <h3 class="title-secondary">Use App Tools to Get Noticed</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus neque. Curabitur at risus quis eros eleifend
+                                iaculis.</p>
+                            </div><!--list-content-->
+                        </div><!--clearfix-->
+                    </li><!--col-md-4-->
                     
                     <li class="col-md-4">
-                        <div class="list-content">
-                            <h3 class="title-secondary">Heading</h3>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        </div><!--list-content-->
-                    </li>
+                    	<div class="clearfix">
+                            <div class="list-icon">
+                                <img src="<?php echo get_template_directory_uri();?>/img/ideal-roster-icon.png" alt=""/>
+                            </div><!--list-icon-->
+                            
+                            <div class="list-content">
+                                <h3 class="title-secondary">Join/Build The Ideal Roster</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus neque. Curabitur at risus quis eros eleifend
+                                 iaculis.</p>
+                            </div><!--list-content-->
+                        </div><!--clearfix-->
+                    </li><!--col-md-4-->
+                    
+                    
                 </ol>
               </div><!--row-->
       </div><!--how-it-works-->
