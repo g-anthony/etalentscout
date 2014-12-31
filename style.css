@@ -7,13 +7,61 @@ Description: Theme for loltalentscout.com
 Version: 1.0
 */
 
-
-
 body{
-	background-color:#343746;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
+
+img{max-width:100%;}
+
+/* TYPOGRAPHY STYLES
+==================================== */
+@font-face{
+	font-family:'Lovelo';
+	src:'fonts/Lovelo.otf'
+}
+
+h1, h2, h3, 
+h4, h5, h6{	
+	font-family:'Lovelo';
+	font-weight:bold;
+	line-height:1.5;
+	color:#333746;
+}
+
+.title-secondary{font-family:'Roboto'}
+
+.title-section{
+	position:relative;
+	text-align:center;
+	margin-bottom:80px;
+}
+
+.title-section span{
+	background-color: #FFF;
+	position: relative;
+	z-index: 1001;
+	padding: 0 25px;
+}
+
+.title-section:after{
+	content:'';
+	position: absolute;
+	border-bottom: 2px solid #cccdce;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+	z-index: 1000;
+}
+
+
+.title-section-left{}
+
+.title-section-right{}
+
 
 /* NAVIGATION STYLES
 ==================================== */
@@ -42,7 +90,6 @@ body{
 
 .navbar-inverse{
 	background-color: #e03627;
-	
 	border: none;
 }
 
@@ -55,3 +102,121 @@ body{
 .btn-clear{border: 1px solid #FFF;padding: 14px 20px;color:#FFF;}
 .btn-clear:hover{background: #FFF;color: #e03627;}
 .btn-clear > a:first-child{margin-right:40px;}
+
+
+/* How it works section
+==================================== */
+
+.test{
+	background-color:#eef0f1;
+	padding: 60px 0;
+}
+
+.how-it-works{padding:80px 0;}
+
+.how-it-works ol{
+	counter-reset: li;
+	margin:0;
+	padding:0;
+}
+
+.how-it-works li{
+	position: relative;
+	list-style: none;
+}
+
+.how-it-works ol > li .list-content:before {
+	content: counter(li);
+	counter-increment: li;
+	color: #e03627;
+	text-align: center;
+	font-family:'Lovelo';
+	font-size: 55px;
+	float:left;
+	margin:-14px 0 0 -45px;
+}
+
+.how-it-works h3{margin-top:0;}
+
+
+
+@media (min-width: 200px) {
+	.title-section span{ padding:0; }
+	
+	.title-section:after{ border-bottom:0; }
+	
+	h2{font-size:26px;}
+	
+	h3{font-size:20px;}
+	
+	
+	/* How it works section 200px
+	==================================== */
+	.how-it-works li{ margin-top:60px; }
+	.how-it-works li:first-child{ margin-top:0; }
+	
+	.how-it-works .list-icon{margin-bottom:40px;}
+	.how-it-works .list-content{margin-left:45px;}
+	
+	.how-it-works ol > li .list-content:before{
+		font-size:50px;
+		margin:-8px 0 0 -45px;
+	}
+	
+}
+
+
+@media (min-width: 580px){
+	
+	.title-section span{ padding:0 25px; }
+	
+	.title-section:after{ border-bottom: 2px solid #cccdce; }
+	
+	
+	/* How it works section 580px
+	==================================== */
+	.how-it-works .list-icon{
+		float:left;
+		width:41.59%;
+		margin-bottom:0;
+	}
+	
+	.how-it-works .list-content{
+		float:left;
+		width:46.65%;
+		margin-left:11.75%;	
+	}
+	
+}
+
+
+@media (min-width: 768px) {
+	
+	h2{font-size:30px;}
+	h3{font-size:22px;}
+
+}
+
+
+@media (min-width: 992px) {
+	
+	/* How it works section 992px
+	==================================== */
+	.how-it-works li{ margin-top:0; }
+	
+	.how-it-works .list-icon{
+		float:none;
+		width:100%;
+		margin-bottom:40px;	
+	}
+	
+	.how-it-works .list-content{
+		float:none;
+		width:auto;
+		margin-left:45px;
+	}
+	
+	.how-it-works ol > li .list-content:before{ font-size:55px; }
+	
+}
+
