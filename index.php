@@ -1,15 +1,18 @@
 <?php get_header(); ?>
 
- <!-- Main jumbotron for a primary marketing message or call to action -->
+ <!-- Main jumbotron for primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-        <video autoplay>
-          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        <video width="100%" autoplay loop>
+          <source src="<?php echo get_template_directory_uri(); ?>/vid/charlottev_gST3VGYi.mp4#t=10,20" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-      </div>
-    </div>
+        <div class="container overlay">
+            <h1><?php echo get_bloginfo( 'description' ); ?></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fringilla felis, eget malesuada tortor. Proin fringilla tellus ac leo imperdiet sagittis.</p>
+            <a class="btn btn-clear btn-clear-main-message" href="">Get Started</a>
+        </div><!-- /.container overlay -->
+      </div><!-- /.jumbotron -->
+
 
 
 

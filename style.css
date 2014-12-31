@@ -104,6 +104,21 @@ h4, h5, h6{
 .btn-clear > a:first-child{margin-right:40px;}
 
 
+/* Main marketing message
+==================================== */
+
+.overlay{
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	color: #FFF;
+}
+
+.btn-clear-main-message{
+	margin-top: 100px;
+}
+
 /* How it works section
 ==================================== */
 
