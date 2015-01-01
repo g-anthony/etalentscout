@@ -14,14 +14,12 @@ body{
 	padding-bottom: 20px;
 }
 
-
-}
-
 .wrapper{ padding: 40px 0; }
 
 .wrapper-secondary{ background-color:#eef0f1; }
 
 img{max-width:100%;}
+
 
 /* TYPOGRAPHY STYLES
 ==================================== */
@@ -38,39 +36,6 @@ h4, h5, h6{
 	color:#333746;
 }
 
-.title-secondary{font-family:'Roboto'}
-
-.title-section{
-	position:relative;
-	text-align:center;
-	margin-bottom:80px;
-}
-
-.title-section span{
-	background-color: #FFF;
-	position: relative;
-	z-index: 1001;
-	padding: 0 25px;
-}
-
-.title-section:after{
-	content:'';
-	position: absolute;
-	border-bottom: 2px solid #cccdce;
-	width: 100%;
-	left: 0;
-	top: 50%;
-	margin-top: -1px;
-	z-index: 1000;
-}
-
-
-.title-section-left{}
-
-.title-section-right{
-	text-align:center;
-	margin:0 0 40px 0;
-}
 
 /* NAVIGATION STYLES
 ==================================== */
@@ -140,18 +105,6 @@ h4, h5, h6{
 	margin-top: 100px;
 }
 
-/* How it works section
-==================================== */
-
-.test{
-	background-color:#eef0f1;
-	padding: 60px 0;
-}
-
-.how-it-works{padding:80px 0;}
-
-
-
 
 /* How it works section
 ==================================== */
@@ -197,70 +150,19 @@ h4, h5, h6{
 .how-it-works h3{margin-top:0;}
 
 
+/* CUSTOM MODULES
+==================================== */
 
-@media (min-width: 200px) {
-	.title-section span{ padding:0; }
+	/* title section module 
+	----------------------------------- */
+	.title-secondary{font-family:'Roboto'}
 	
-	.title-section:after{ border-bottom:0; }
-	
-	h2{font-size:26px;}
-	
-	h3{font-size:20px;}
-	
-	
-	/* How it works section 200px
-	==================================== */
-	.how-it-works li{ margin-top:60px; }
-	.how-it-works li:first-child{ margin-top:0; }
-	
-	.how-it-works .list-icon{margin-bottom:40px;}
-	.how-it-works .list-content{margin-left:45px;}
-	
-	.how-it-works ol > li .list-content:before{
-		font-size:50px;
-		margin:-8px 0 0 -45px;
+	.title-section{
+		text-align:center;
+		margin:0 0 40px 0;
 	}
 	
-}
-
-
-@media (min-width: 580px){
-	
-	.title-section span{ padding:0 25px; }
-	
-	.title-section:after{ border-bottom: 2px solid #cccdce; }
-	
-	
-	/* How it works section 580px
-	==================================== */
-	.how-it-works .list-icon{
-		float:left;
-		width:41.59%;
-		margin-bottom:0;
-	}
-	
-	.how-it-works .list-content{
-		float:left;
-		width:46.65%;
-		margin-left:11.75%;	
-	}
-	
-}
-
-
-@media (min-width: 768px) {
-	
-	h2{font-size:30px;}
-	h3{font-size:22px;}
-
-}
-
-
-@media (min-width: 992px) {
-	
-	/* How it works section 992px
-	==================================== */
-	.how-it-works li{ margin-top:0; }
+	.title-section-left{ margin:0 0 10px 0; }
 	
 @media (min-width: 560px){
 	
