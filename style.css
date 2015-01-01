@@ -33,13 +33,6 @@ h4, h5, h6{
 	color:#333746;
 }
 
-.title-secondary{font-family:'Roboto'}
-
-.title-section{
-	text-align:center;
-	margin:0 0 40px 0;
-}
-
 /* NAVIGATION STYLES
 ==================================== */
 .admin-bar .navbar-fixed-top{margin-top:32px;}
@@ -137,6 +130,21 @@ h4, h5, h6{
 }
 
 .how-it-works h3{margin-top:0;}
+
+
+/* CUSTOM MODULES
+==================================== */
+
+	/* title section module 
+	----------------------------------- */
+	.title-secondary{font-family:'Roboto'}
+	
+	.title-section{
+		text-align:center;
+		margin:0 0 40px 0;
+	}
+	
+	.title-section-left{ margin:0 0 10px 0; }
 
 
 
