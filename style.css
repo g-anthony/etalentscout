@@ -10,6 +10,11 @@ Version: 1.0
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+
 }
 
 .wrapper{ padding: 40px 0; }
@@ -32,6 +37,7 @@ h4, h5, h6{
 	line-height:1.5;
 	color:#333746;
 }
+
 
 /* NAVIGATION STYLES
 ==================================== */
@@ -77,10 +83,24 @@ h4, h5, h6{
 /* Main marketing message
 ==================================== */
 
+.jumbotron{
+	position: relative;
+	background-color: transparent;
+}
+
 .overlay{
 	display: block;
 	position: absolute;
 	top: 25%;
+	left: 25%;
+	color: #FFF;
+}
+.overlay-color{
+	background-color: rgba(52,55,70,0.5);
+	position: absolute;
+	top: -4%;
+	width: 100%;
+	height: 100%;
 	left: 15%;
 	color: #FFF;
 }
@@ -90,10 +110,9 @@ h4, h5, h6{
 }
 
 
-
-
 /* How it works section
 ==================================== */
+
 .how-it-works ol{
 	counter-reset: li;
 	margin:0;
@@ -124,6 +143,9 @@ h4, h5, h6{
 	color: #e03627;
 	text-align: center;
 	font-family:'Lovelo';
+	font-size: 55px;
+	float:left;
+	margin:-14px 0 0 -45px;
 	font-size: 50px;
 	float:left;
 	margin:-3px 0 0 -45px;
@@ -145,9 +167,7 @@ h4, h5, h6{
 	}
 	
 	.title-section-left{ margin:0 0 10px 0; }
-
-
-
+	
 @media (min-width: 560px){
 	
 	/* CUSTOM MODULES
@@ -222,6 +242,7 @@ h4, h5, h6{
 	.how-it-works ol > li .list-content:before{ font-size:55px; }
 	
 }
+
 
 @media (min-width: 1200px){
 	
