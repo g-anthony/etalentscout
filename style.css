@@ -112,7 +112,7 @@ video#main-vid{
 }
 
 
-/* How it works section
+/* HOW IT WORKS
 ==================================== */
 
 .how-it-works ol{
@@ -154,6 +154,54 @@ video#main-vid{
 }
 
 .how-it-works h3{margin-top:0;}
+
+
+/* MADE FOR PLAYERS/TEAMS
+==================================== */
+.for-players-list{
+	list-style:none;
+	padding:0;
+}
+
+.list-description{ margin-bottom:40px;}
+
+.for-players-list .list-description h3{margin-top:0;}
+
+.for-players-list li{
+	margin-left:95px;
+	margin-top:40px;
+}
+
+.for-players-list li:first-child{ margin-top:0;}
+
+.for-players-list .list-icon{
+	font-size: 50px;
+	border: 2px solid #333746;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	display: table;
+	background-color: #eef0f1;
+	color: #333746;
+	position: relative;
+	float:left;
+	margin-left:-95px;
+	margin-top:8px;
+}
+
+.for-players-list .list-icon i{
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+.test-image{
+	height:242px;
+	width:100%;
+	background-color:gray;
+	margin-bottom:40px;
+}
+
 
 
 /* CUSTOM MODULES
