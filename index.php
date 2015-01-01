@@ -77,8 +77,8 @@
                     
                 </ol>
               </div><!--row-->
-      </div><!--wrapper how-it-works-->
-   </div><!--container-->   
+      </div><!--wrapper-->
+   </div><!--how it works container-->   
       
      
      
@@ -97,23 +97,46 @@
    
       
       <div class="row">
+      
         <div class="col-md-6">
-			<img src="" title="Made for Players"/>
+			<img src="" class="test-image" title="Made for Players"/>
         </div>
         
         <section class="col-md-6">
-         <h3 class="title-section title-section-left"><span>Made For Players</span></h3>
-         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-         
-			<ul>
-            	<li>
-                	<h3><span class="glyphicon glyphicon-ok-circle"></span>This is a Title</h3>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                </li>
-                <li></li>
-                <li></li>
-            </ul>
+        	<div class="list-description">
+                <h3 class="title-section title-section-left"><span>Made For Players</span></h3>
+         		<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+            </div><!--list-description-->
             
+
+			<ul class="for-players-list">
+            	<li>
+                
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
+                    
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                    
+                </li>
+                
+            	<li>
+                
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
+                    
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                    
+                </li>
+                                
+            </ul><!--for-players-list-->
        </section>
        
       </div><!--row-->
