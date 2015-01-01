@@ -29,8 +29,8 @@
 
 
 
-    <div class="container">
-    	<div class="how-it-works">
+    <div class="how-it-works container">
+    	<div class="wrapper">
               <h2 class="title-section"><span>How It Works</span></h2> 
               <div class="row">
                 <ol class="clearfix">
@@ -42,7 +42,7 @@
                             </div><!--list-icon-->
                             
                             <div class="list-content">
-                                <h3 class="title-secondary">Create a Free Profile</h3>
+                                <h3 class="title-secondary">Sign Up for a Free Account</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus neque. Curabitur at risus quis eros eleifend
                                 iaculis.</p>
                             </div><!--list-content-->
@@ -80,7 +80,7 @@
                     
                 </ol>
               </div><!--row-->
-      </div><!--how-it-works-->
+      </div><!--wrapper how-it-works-->
    </div><!--container-->   
       
      
@@ -95,15 +95,17 @@
      
      
      
-   <div class="test">
-   <div class="container">   
-      <section class="row ">
+   <div class="wrapper wrapper-secondary">
+   <div class="container">
+   
+      
+      <div class="row">
         <div class="col-md-6">
 			<img src="" title="Made for Players"/>
         </div>
         
-        <div class="col-md-6">
-         <h3>Made For Players</h3>
+        <section class="col-md-6">
+         <h3 class="title-section title-section-left"><span>Made For Players</span></h3>
          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
          
 			<ul>
@@ -115,26 +117,30 @@
                 <li></li>
             </ul>
             
-       </div>
-      </section><!--row-->
+       </section>
+       
+      </div><!--row-->
       
-      <section class="row ">
-        <div class="col-md-6">
-          	<h3>Made For Teams</h3>
-			<ul>
-            	<li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        
-        <div class="col-md-6">
-			<img src="" title="Made for Teams"/>
-        </div>
+      
 
-      </section><!--row-->
       </div><!--container-->
-      </div><!--test-->
+ 	</div><!--wrapper wrapper-secondary-->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       <div class="container"> 
 
