@@ -8,7 +8,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fringilla felis, eget malesuada tortor. Proin fringilla tellus ac leo imperdiet sagittis.</p>
                 <a class="btn btn-clear btn-clear-main-message" href="">Get Started</a>
            </div><!-- /.container .text-overlay -->
-    	<video width="100%" autoplay loop>
+    	<video width="100%" autoplay loop poster="http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg" id="main-vid">
               <source src="http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/shutterstock_v3702740_4.m4v" type="video/mp4">
               Your browser does not support HTML5 video.
     	</video>

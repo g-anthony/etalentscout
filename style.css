@@ -83,7 +83,13 @@ h4, h5, h6{
 
 .jumbotron{
 	position: relative;
-	background-color: transparent;
+	background: transparent url('http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg') no-repeat;
+	background-size: cover;
+	height: 350px;
+}
+
+video#main-vid{
+	display: none;
 }
 
 .overlay{
@@ -210,6 +216,14 @@ h4, h5, h6{
 
 @media (min-width: 768px){
 	
+		/* Jumbotron  768px
+	==================================== */
+	.jumbotron{
+		height: 700px;	
+	}
+	video#main-vid{
+		display:block;
+	}
 	
 }
 
@@ -236,7 +250,7 @@ h4, h5, h6{
 	}
 
 	.how-it-works ol > li .list-content:before{ font-size:55px; }
-	
+
 }
 
 
