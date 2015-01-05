@@ -41,14 +41,16 @@ h4, h5, h6{
 ==================================== */
 .admin-bar .navbar-fixed-top{margin-top:32px;}
 
-.navbar {min-height: 100px;}
+.navbar {
+	font-family:'Lovelo';
+	min-height: 100px;
+}
 
 .navbar-nav > li > a{ 
 	padding-top: 39.5px;
 	padding-bottom: 39.5px;
 }
 .navbar-btns{
-	margin-left: 100px;
 	padding: 25px 0px;
 }
 
@@ -73,9 +75,19 @@ h4, h5, h6{
 
 /* SIGN UP / LOG IN STLYES
 =============================== */
-.btn-clear{border: 1px solid #FFF;padding: 14px 20px;color:#FFF;}
-.btn-clear:hover{background: #FFF;color: #e03627;}
-.btn-clear > a:first-child{margin-right:40px;}
+
+.btn-clear{
+	border: 2px solid #FFF;
+	padding: 14px 20px;
+	color:#FFF;
+}
+
+.btn-clear:hover{
+	background: #FFF;
+	color: #e03627;
+}
+
+.btn-clear:first-child{margin-right:15px;}
 
 
 /* Main marketing message
@@ -88,6 +100,14 @@ h4, h5, h6{
 	height: 350px;
 }
 
+.jumbotron h1{
+	font-size: 30px;
+}
+
+.jumbotron p{
+	display: none;
+}
+
 video#main-vid{
 	display: none;
 }
@@ -95,20 +115,25 @@ video#main-vid{
 .overlay{
 	display: block;
 	position: absolute;
-	top: 25%;
-	left: 25%;
+	top: 20%;
+	left: 0;
 	color: #FFF;
 }
 .overlay-color{
 	background-color: rgba(52,55,70,0.5);
 	position: absolute;
-	top: -4%;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 }
 
-.btn-clear-main-message{
-	margin-top: 100px;
+.btn-clear-main-cta{
+	margin: 10% 0;
+	width: 100%;
+}
+.btn:focus, .btn.focus > .btn-clear-main-cta{
+	color: #FFF;
 }
 
 
@@ -220,6 +245,28 @@ video#main-vid{
 	
 @media (min-width: 560px){
 	
+		/* Jumbotron  560px
+	==================================== */
+
+	.jumbotron h1{
+		font-size: 32px;	
+	}
+	
+	.jumbotron p{
+		display:block;
+		font-size: 16px;	
+	}
+	
+	.overlay{
+		top: 17%;
+		left: 10%;
+	}
+	
+	.btn-clear-main-cta{
+		margin: 3% 25%;
+		width: 50%;
+	}
+	
 	/* CUSTOM MODULES
 	==================================== */
 	
@@ -264,10 +311,27 @@ video#main-vid{
 
 @media (min-width: 768px){
 	
-		/* Jumbotron  768px
+	/* Jumbotron  768px
 	==================================== */
+	
 	.jumbotron{
-		height: 700px;	
+		height: 100%;
+		background: none;
+		padding: 0;
+	}
+	
+	.jumbotron h1{
+		font-size: 40px;
+		text-align: center;	
+	}
+	
+	.jumbotron p{
+		font-size: 21px;	
+	}
+	
+	.overlay{
+		top: 18%;
+		left: 3%;
 	}
 	video#main-vid{
 		display:block;
