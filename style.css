@@ -46,11 +46,17 @@ h4, h5, h6{
 	min-height: 100px;
 }
 
+.navbar-nav{
+	width: 100%;
+	margin: 0;
+}
+
 .navbar-nav > li > a{ 
-	padding-top: 39.5px;
-	padding-bottom: 39.5px;
+	padding: 25px 0;
+	text-align: center;
 }
 .navbar-btns{
+	display: none;
 	padding: 25px 0px;
 }
 
@@ -67,6 +73,23 @@ h4, h5, h6{
 .navbar-inverse{
 	background-color: #e03627;
 	border: none;
+}
+
+.navbar-toggle {
+	top: 25px;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: #FFF;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #343746;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: #FFF;
+	margin-top: 15px;
 }
 
 .current-menu-item > a{
