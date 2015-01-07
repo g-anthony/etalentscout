@@ -6,12 +6,18 @@ Author URI: http://etalentscout.com
 Description: Theme for loltalentscout.com
 Version: 1.0
 */
+html{
+	position: relative;
+  	min-height: 100%;
+}
+
 
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
 	padding-top: 50px;
 	padding-bottom: 20px;
+	margin-bottom:60px; /* margin-bottom is for the sticky footer feature */
 }
 
 .wrapper{ padding: 40px 0; }
@@ -19,6 +25,8 @@ body{
 .wrapper-secondary{ background-color:#eef0f1; }
 
 img{max-width:100%;}
+
+
 
 
 /* TYPOGRAPHY STYLES
@@ -265,6 +273,24 @@ video#main-vid{
 	margin-top:0;
 	padding-top:0;
 }
+
+
+/* FOOTER STYLES
+==================================== */
+
+footer{  
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+
+  	background-color: #333746;
+	color:#fff;
+}
+
+footer .title-secondary{color:#fff;}
+
+
+
 
 
 /* CUSTOM MODULES
