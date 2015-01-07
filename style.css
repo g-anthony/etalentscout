@@ -211,7 +211,9 @@ video#main-vid{
 	padding:0;
 }
 
-.list-description{ margin-bottom:40px;}
+.list-description{ 
+	text-align:center;
+	margin-bottom:40px;}
 
 .for-players-list .list-description h3{margin-top:0;}
 
@@ -223,7 +225,7 @@ video#main-vid{
 .for-players-list li:first-child{ margin-top:0;}
 
 .for-players-list .list-icon{
-	font-size: 50px;
+	font-size: 45px;
 	border: 2px solid #333746;
 	border-radius: 50%;
 	width: 75px;
@@ -243,13 +245,26 @@ video#main-vid{
 	vertical-align: middle;	
 }
 
-.test-image{
-	height:242px;
-	width:100%;
-	background-color:gray;
+.made-for-image-wrap{
 	margin-bottom:40px;
 }
 
+.made-for-image-wrap img{
+	height:242px;
+	background-color:gray;
+}
+
+.made-for-details .row{
+	border-top:2px solid #cccdce;
+	margin-top:40px;
+	padding-top:40px;
+}
+	
+.made-for-details .row:first-child{
+	border:0;
+	margin-top:0;
+	padding-top:0;
+}
 
 
 /* CUSTOM MODULES
@@ -266,9 +281,12 @@ video#main-vid{
 	
 	.title-section-left{ margin:0 0 10px 0; }
 	
-@media (min-width: 560px){
+	.wrapper-secondary .title-section span{background-color:#EEF0F1;}
 	
-		/* Jumbotron  560px
+	
+	
+@media (min-width: 560px){
+	/* Jumbotron  560px
 	==================================== */
 
 	.jumbotron h1{
@@ -288,29 +306,6 @@ video#main-vid{
 	.btn-clear-main-cta{
 		margin: 3% 25%;
 		width: 50%;
-	}
-	
-	/* CUSTOM MODULES
-	==================================== */
-	
-	/* title section module 
-	----------------------------------- */
-	.title-section{ position:relative; }
-	
-	.title-section span{
-		background-color: #FFF;
-		padding: 0 25px;
-	}
-
-	.title-section:after{
-		content:'';
-		position: absolute;
-		border-bottom: 2px solid #cccdce;
-		width: 100%;
-		left: 0;
-		top: 50%;
-		margin-top: -4px;
-		z-index: -1;
 	}
 	
 	
@@ -333,7 +328,6 @@ video#main-vid{
 
 
 @media (min-width: 768px){
-	
 	/* Jumbotron  768px
 	==================================== */
 	
@@ -360,7 +354,62 @@ video#main-vid{
 		display:block;
 	}
 	
+	
+	/* MADE FOR PLAYERS/TEAMS
+	==================================== */
+	.made-for-image-wrap{
+		width:47.91%;
+		height:250px;
+	}
+	
+	.made-for-content-wrap{
+		width:48.83%;
+		margin-left:3.26%;
+	}
+	
+	.made-for-players .made-for-image-wrap, 
+	.made-for-teams .made-for-image-wrap{ float:left; }
+	
+	.made-for-players .made-for-content-wrap, 
+	.made-for-teams .made-for-image-wrap{float:right;}
+	
+	.made-for-teams .made-for-content-wrap{margin:0 3.26% 0 0;}
+	
+	.made-for-details .row{border-top:0;}
+	
+	.list-description{text-align:left;}
+	
+	
+	/* CUSTOM MODULES
+	==================================== */
+	
+	/* title section module 
+	----------------------------------- */
+	.title-section{ position:relative; }
+	
+	.title-section span{
+		background-color: #FFF;
+		padding: 0 25px;
+		position:relative;
+		z-index:1001;
+	}
+
+	.title-section:after{
+		content:'';
+		position: absolute;
+		border-bottom: 2px solid #cccdce;
+		width: 100%;
+		left: 0;
+		top: 50%;
+		margin-top: -4px;
+		z-index: 1000;
+	}
+	
+	.title-section-left{ text-align:left; }
+	
+	.title-section-left span{ padding-left:0; }
 }
+
 
 @media (min-width: 992px){
 	

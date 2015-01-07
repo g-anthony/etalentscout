@@ -92,17 +92,15 @@
      
      
      
-   <div class="wrapper wrapper-secondary">
+   <div class="made-for-details wrapper wrapper-secondary">
    <div class="container">
    
-      
-      <div class="row">
-      
-        <div class="col-md-6">
-			<img src="" class="test-image" title="Made for Players"/>
+      <div class="made-for-players row">
+        <div class="made-for-image-wrap col-md-6">
+			<img src="" title="Made for Players"/>
         </div>
         
-        <section class="col-md-6">
+        <section class="made-for-content-wrap col-md-6">
         	<div class="list-description">
                 <h3 class="title-section title-section-left"><span>Made For Players</span></h3>
          		<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
@@ -111,7 +109,6 @@
 
 			<ul class="for-players-list">
             	<li>
-                
                 	<div class="list-icon">
                     	<i class="fa fa-check"></i>
                     </div><!--list-icon-->
@@ -120,11 +117,9 @@
                 		<h3 class="title-secondary">This is a Title</h3>
                     	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
                     </div><!--list-content-->
-                    
                 </li>
                 
             	<li>
-                
                 	<div class="list-icon">
                     	<i class="fa fa-check"></i>
                     </div><!--list-icon-->
@@ -133,35 +128,85 @@
                 		<h3 class="title-secondary">This is a Title</h3>
                     	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
                     </div><!--list-content-->
+                </li> 
+                
+            	<li>
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
                     
-                </li>
-                                
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                </li>                              
             </ul><!--for-players-list-->
        </section>
-       
+      </div><!--row-->
+
+
+      <div class="made-for-teams row">
+        <div class="made-for-image-wrap col-md-6">
+			<img src="" title="Made for Players"/>
+        </div>
+        
+        <section class="made-for-content-wrap col-md-6">
+        	<div class="list-description">
+                <h3 class="title-section title-section-left"><span>Made For Teams</span></h3>
+         		<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+            </div><!--list-description-->
+            
+
+			<ul class="for-players-list">
+            	<li>
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
+                    
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                </li>
+                
+            	<li>
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
+                    
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                </li>
+                
+            	<li>
+                	<div class="list-icon">
+                    	<i class="fa fa-check"></i>
+                    </div><!--list-icon-->
+                    
+                	<div class="list-content">
+                		<h3 class="title-secondary">This is a Title</h3>
+                    	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                    </div><!--list-content-->
+                </li>                               
+            </ul><!--for-players-list-->
+       </section>
       </div><!--row-->
       
-      
-
       </div><!--container-->
  	</div><!--wrapper wrapper-secondary-->
       
+    
+    
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="title-section"><span>What They Say</span></h2>
+        </div>
+    </div> 
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
       <div class="container"> 
 
 <?php get_footer(); ?>
