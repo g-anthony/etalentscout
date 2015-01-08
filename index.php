@@ -202,6 +202,10 @@
     <div class="wrapper">
         <div class="container">
             <h2 class="title-section"><span>What They Say</span></h2>
+            
+            <?php if ( function_exists( 'get_testimonial_slider' ) ) {
+  				get_testimonial_slider(); } 
+			?>
         </div>
     </div> 
       
