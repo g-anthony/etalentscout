@@ -58,11 +58,17 @@ h4, h5, h6{
 }
 
 .navbar-nav > li > a{ 
-	padding: 25px 0;
-	text-align: center;
+	padding: 25px 10px;
 }
+
+.navbar-nav > li > a:after{ 
+	content: "\f105";
+	font-family: FontAwesome;
+	float: right;
+	font-size: 30px;
+}
+
 .navbar-btns{
-	display: none;
 	padding: 25px 0px;
 }
 
@@ -72,7 +78,12 @@ h4, h5, h6{
 	padding:7.5px;
 }
 
-.navbar-inverse .navbar-nav > li > a{ color:#FFF;}
+.navbar-collapse{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{color:#FFF;}
 
 .navbar-inverse .navbar-nav > li > a:hover{background: #c12f22;}
 
@@ -81,26 +92,20 @@ h4, h5, h6{
 	border: none;
 }
 
-.navbar-toggle {
-	top: 25px;
-}
+.navbar-toggle {top: 25px;}
 
-.navbar-inverse .navbar-toggle {
-	border-color: #FFF;
-}
+.navbar-inverse .navbar-toggle {border-color: #FFF;}
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: #343746;
-}
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {background-color: #343746;}
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse, 
+.navbar-inverse .navbar-form {
 	border-color: #FFF;
 	margin-top: 15px;
 }
 
-.current-menu-item > a{
-	background: #c12f22;
-}
+.current-menu-item > a{background: #c12f22;}
 
 /* SIGN UP / LOG IN STLYES
 =============================== */
