@@ -69,7 +69,8 @@ h4, h5, h6{
 }
 
 .navbar-btns{
-	padding: 25px 0px;
+	padding: 15px 0;
+	margin-right: 15px;
 }
 
 .navbar-brand{
@@ -92,7 +93,10 @@ h4, h5, h6{
 	border: none;
 }
 
-.navbar-toggle {top: 25px;}
+.navbar-toggle {
+	top: 25px;
+	margin-bottom: 43px;
+}
 
 .navbar-inverse .navbar-toggle {border-color: #FFF;}
 
@@ -110,13 +114,13 @@ h4, h5, h6{
 /* SIGN UP / LOG IN STLYES
 =============================== */
 
-.btn-clear{
+.btn-clear, btn-clear:focus{
 	border: 2px solid #FFF;
 	padding: 14px 20px;
 	color:#FFF;
 }
 
-.btn-clear:hover{
+.btn-clear:hover, .btn-clear:focus{
 	background: #FFF;
 	color: #e03627;
 }
@@ -131,11 +135,12 @@ h4, h5, h6{
 	position: relative;
 	background: transparent url('http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg') no-repeat;
 	background-size: cover;
-	height: 350px;
+	height: 450px;
 }
 
 .jumbotron h1{
 	font-size: 30px;
+	text-align: center;
 }
 
 .jumbotron p{
@@ -149,7 +154,7 @@ video#main-vid{
 .overlay{
 	display: block;
 	position: absolute;
-	top: 20%;
+	top: 29%;
 	left: 0;
 	color: #FFF;
 }
@@ -163,12 +168,11 @@ video#main-vid{
 }
 
 .btn-clear-main-cta{
-	margin: 10% 0;
+	margin: 10px 0;
 	width: 100%;
+	font-size: 18px;
 }
-.btn:focus, .btn.focus > .btn-clear-main-cta{
-	color: #FFF;
-}
+
 
 
 /* HOW IT WORKS
@@ -387,30 +391,67 @@ footer .col-sm-4 p{
 
 	.list-bordered > li:first-child{border-left:1px solid #d2d2d2;}
 	
-	
-	
-@media (min-width: 560px){
-	/* Jumbotron  560px
-	==================================== */
+
+@media (min-width: 339px){
 
 	.jumbotron h1{
-		font-size: 32px;	
+		 font-size: 32px;
 	}
+	
+		.overlay{
+			top: 27%;
+		}
+	
+}
+
+@media (min-width: 360px){
+
+	.jumbotron h1{
+		 font-size: 34px;
+	}
+
+}
+
+@media (min-width: 378px){
+	
+	.overlay{
+			top: 30%;
+		}
+
+
+}
+
+@media (min-width: 464px){
+	
+	.jumbotron h1{
+		font-size: 36px;
+	}
+		
+	.overlay{
+		top: 22%;
+	}
+}
+
+@media (min-width: 506px){
 	
 	.jumbotron p{
 		display:block;
 		font-size: 16px;	
 	}
 	
-	.overlay{
-		top: 17%;
-		left: 10%;
+}
+
+	
+@media (min-width: 560px){
+	/* Jumbotron  560px
+	==================================== */
+	
+	.btn-clear-main-cta {
+		width: 50%;
+		margin-right: 25%;
+		margin-left: 25%;
 	}
 	
-	.btn-clear-main-cta{
-		margin: 3% 25%;
-		width: 50%;
-	}
 	
 	
 	/* HOW IT WORKS 560PX
@@ -464,6 +505,22 @@ footer .col-sm-4 p{
 		display:block;
 	}
 	
+	nav div.container{
+		padding: 0;
+		margin: 0;
+	}
+	
+	#navbar{
+		float: right;
+	}
+	
+	nav > div.container:before, nav > div.container:after{
+		display: none;
+	}
+	
+	.navbar-nav > li > a:after{
+		display: none;
+	}
 	
 	/* MADE FOR PLAYERS/TEAMS 768px
 	==================================== */
