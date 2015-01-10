@@ -128,7 +128,7 @@ h4, h5, h6{
 .btn-clear:first-child{margin-right:15px;}
 
 
-/* Main marketing message
+/* Main Marketing Message
 ==================================== */
 
 .jumbotron{
@@ -393,35 +393,51 @@ footer .col-sm-4 p{
 	
 
 @media (min-width: 339px){
+	
+	/* Main Marketing Message  339px
+	==================================== */
 
 	.jumbotron h1{
-		 font-size: 32px;
+		font-size: 32px;
 	}
 	
-		.overlay{
-			top: 27%;
-		}
+	.overlay{
+		top: 27%;
+	}
 	
 }
 
 @media (min-width: 360px){
+	
+	/* Main Marketing Message 360px
+	==================================== */
 
 	.jumbotron h1{
-		 font-size: 34px;
+		font-size: 34px;
 	}
 
 }
 
 @media (min-width: 378px){
 	
+	/* Main Marketing Message  378px
+	==================================== */
+	
 	.overlay{
-			top: 30%;
-		}
+		top: 30%;
+	}
 
 
 }
 
-@media (min-width: 464px){
+@media (min-width: 447px){
+	
+	/* Main Marketing Message  447px
+	==================================== */
+	
+	.navbar-btns {
+		margin-top: 10px;
+	}
 	
 	.jumbotron h1{
 		font-size: 36px;
@@ -434,6 +450,9 @@ footer .col-sm-4 p{
 
 @media (min-width: 506px){
 	
+	/* Main Marketing Message  506px
+	==================================== */
+	
 	.jumbotron p{
 		display:block;
 		font-size: 16px;	
@@ -443,7 +462,8 @@ footer .col-sm-4 p{
 
 	
 @media (min-width: 560px){
-	/* Jumbotron  560px
+	
+	/* Main Marketing Message  560px
 	==================================== */
 	
 	.btn-clear-main-cta {
@@ -479,8 +499,35 @@ footer .col-sm-4 p{
 	body{ margin-bottom:413px; /* for sticky footer */ }
 	
 	
-	/* Jumbotron  768px
+	/* Navigation 768px
+	====================================*/
+	
+	#navbar{
+		float: right;
+		margin-right: 30%;
+		margin-top: 0;
+	}
+	
+	nav > div.container:before, nav > div.container:after{
+		display: none;
+	}
+	
+	.navbar-nav > li > a{
+		padding: 40px 15px;
+	}
+	
+	.navbar-nav > li > a:after{
+		display: none;
+	}
+	
+	
+	/* Main Marketing Message  768px
 	==================================== */
+	
+	.navbar-btns {
+		position: absolute;
+		right: 0;
+	}
 	
 	.jumbotron{
 		height: 100%;
@@ -489,8 +536,8 @@ footer .col-sm-4 p{
 	}
 	
 	.jumbotron h1{
-		font-size: 40px;
-		text-align: center;	
+		font-size: 50px;
+		text-align: left;	
 	}
 	
 	.jumbotron p{
@@ -505,22 +552,7 @@ footer .col-sm-4 p{
 		display:block;
 	}
 	
-	nav div.container{
-		padding: 0;
-		margin: 0;
-	}
-	
-	#navbar{
-		float: right;
-	}
-	
-	nav > div.container:before, nav > div.container:after{
-		display: none;
-	}
-	
-	.navbar-nav > li > a:after{
-		display: none;
-	}
+
 	
 	/* MADE FOR PLAYERS/TEAMS 768px
 	==================================== */
@@ -600,8 +632,45 @@ footer .col-sm-4 p{
 	.title-section-left span{ padding-left:0; }
 }
 
+@media (min-width: 840px){
+	
+		/* Main Marketing Message  900px
+	==================================== */
+	
+	.navbar-nav > li > a{
+		margin: 0 10px;
+	}
+	
+	
+}
+
+@media (min-width: 900px){
+	
+	/* Main Marketing Message  900px
+	==================================== */
+	
+	.jumbotron h1{
+		font-size: 54px;
+	}
+	
+	overlay{
+		left: 10%
+		
+	}
+
+
+
+}
+
 
 @media (min-width: 992px){
+	
+	/* Main Marketing Message 992px
+	==================================== */
+	
+	.jumbotron h1{
+		font-size: 58px;
+	}
 	
 	/* HOW IT WORKS 992PX
 	==================================== */

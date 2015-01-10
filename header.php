@@ -17,7 +17,7 @@
   <body <?php body_class();?> >
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -26,20 +26,24 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="LoL Talent Scout Logo" title="LoL Talent Scout Logo"></a>
-          <div class="navbar-btns pull-right">
-            <a class="btn btn-clear" href="">Sign up</a>
-            <a class="btn btn-clear" href="">Log in</a>
-          </div><!-- /.navbar-btns pull-right -->
+           
+        <div class="navbar-btns pull-right">
+          <a class="btn btn-clear" href="">Sign up</a>
+          <a class="btn btn-clear" href="">Log in</a>
+        </div><!-- /.navbar-btns pull-right -->
+        
         </div><!-- /navbar-header -->
-	  </div><!-- /.container -->
-	  <div id="navbar" class="navbar-collapse collapse">
-	    <?php 
-          $args = array(
-             'menu'			=> 'header-menu',
-             'menu_class' 	=> 'nav navbar-nav',
-             'container'	=> 'false'
-          );
-          wp_nav_menu( $args );
-        ?>
-      </div><!--/.navbar-collapse -->
+       
+        
+        <div id="navbar" class="navbar-collapse collapse">
+         <?php 
+           $args = array(
+           'menu'			=> 'header-menu',
+           'menu_class' 	    => 'nav navbar-nav',
+           'container'	    => 'false'
+           );
+           wp_nav_menu( $args );
+         ?>
+       </div><!--/.navbar-collapse -->
+             
 	</nav>
