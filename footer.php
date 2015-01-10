@@ -68,5 +68,20 @@
     </footer>
     
     <?php wp_footer(); ?>
+    
+   <script>
+   		(function($){
+			
+			var testimonialSwiper = $('.swiper-container').swiper({
+				'speed': 750, 
+				'calculateHeight': true,
+				'pagination': '.testimonial-pagination',
+				'paginationClickable': true
+				
+			});
+		
+		})(jQuery);
+   
+   </script>
   </body>
 </html>
