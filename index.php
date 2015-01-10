@@ -9,7 +9,7 @@
     	<div class="overlay-color"></div>
         <div class="container overlay">
                 <h1><?php echo get_bloginfo( 'description' ); ?></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel fringilla felis, eget malesuada tortor. Proin fringilla tellus ac leo imperdiet sagittis.</p>
+                <p>Create a free account and start utilizing profile tools and analytics to get discovered by the League of Legends esport community.</p>
                 <a class="btn btn-clear btn-clear-main-cta" href="">Get Started</a>
         </div><!-- /.container .overlay -->
      </div><!-- /.jumbotron -->
