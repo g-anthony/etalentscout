@@ -72,13 +72,14 @@ h4, h5, h6{
 
 .navbar-btns{
 	padding: 15px 0;
-	margin-right: 15px;
+	float: right;
 }
 
 .navbar-brand{
 	height: 85px;
 	width:166px;
 	padding:7.5px;
+	margin-left: 15%;
 }
 
 .navbar-collapse{
@@ -96,8 +97,11 @@ h4, h5, h6{
 }
 
 .navbar-toggle {
-	top: 25px;
-	margin-bottom: 43px;
+	margin: 15px;
+	clear: both;
+	border: 2px solid;
+	padding: 17px 10px;
+	float: right;
 }
 
 .navbar-inverse .navbar-toggle {border-color: #FFF;}
@@ -118,17 +122,15 @@ h4, h5, h6{
 
 .btn-clear, btn-clear:focus{
 	border: 2px solid #FFF;
-	padding: 14px 20px;
+	padding: 14px;
 	color:#FFF;
+	margin-left: 15px;
 }
 
 .btn-clear:hover, .btn-clear:focus{
 	background: #FFF;
 	color: #e03627;
 }
-
-.btn-clear:first-child{margin-right:15px;}
-
 
 /* Main Marketing Message
 ==================================== */
@@ -494,11 +496,7 @@ footer .col-sm-4 p{
 	
 	/* Main Marketing Message  447px
 	==================================== */
-	
-	.navbar-btns {
-		margin-top: 10px;
-	}
-	
+		
 	.jumbotron h1{
 		font-size: 36px;
 	}
