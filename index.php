@@ -218,11 +218,21 @@
                                     	<?php the_post_thumbnail(); ?>
                                     </div>
                                 
-                                    <div class="testimonial-client-info">
-                                        <h3 class="title-secondary"><?php if( !empty( $the_client ) ) { echo $the_client; } ?></h3>
-                                        <p><?php if( !empty( $the_company ) ) { echo $the_company; } ?></p>
-                                        <p><?php if( !empty( $the_website) ) { echo $the_website; } ?></p>
-                                    </div><!--testimonial-client-info-->
+                                    <ul class="testimonial-client-info list">
+                                    
+                                    	<?php if( !empty( $the_client ) ) {?>
+                                        	<li><h3 class="title-secondary"><?php echo $the_client; ?></h3></li>
+                                        <?php }?>
+                                        
+                                       	<?php if( !empty( $the_company ) ) {?>
+										    <li class="testimonial-client-company"><?php echo $the_company;?></li>
+                                        <?php }?>
+                                        
+                                        <?php if( !empty( $the_website) ) { ?>
+                                        	<li class="testimonial-client-website"><a href="<?php echo $the_website;?>"><?php echo $the_website;?></a></li>
+                                        <?php } ?>
+                                        
+                                    </ul><!--testimonial-client-info-->
 
                                 </div><!--testimonial-client-->
                             
@@ -235,11 +245,7 @@
            	<?php endwhile; ?>
              </div><!--swipper-wrapper-->
             
-            <div class="testimonial-pagination pagination">
-            	<span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
-                <span class="swiper-pagination-switch"></span>
-                <span class="swiper-pagination-switch"></span>
-            </div>
+            <div class="testimonial-pagination"></div>
             
             </div><!--testimonial-container-->
         </div><!--container-->

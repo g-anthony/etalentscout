@@ -108,33 +108,10 @@ sizes, pagination, etc.
 /* ===============================================================
 Pagination Styles
 ================================================================*/
+.swiper-pagination-switch{}
 
-.pagination{
-	position: absolute;
-	z-index: 20;
-	left: 10px;
-	bottom: 10px;
-}
+.swiper-active-switch{}
 
-.swiper-pagination-switch {
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	border-radius: 8px;
-	background: #222;
-	margin-right: 5px;
-	opacity: 0.8;
-	border: 1px solid #FFF;
-	cursor: pointer;
-}
-
-.swiper-active-switch {
-	background: #FFF;
-	
-}
-.swiper-visible-switch {
-	background: #AAA;
-	
-}
+.swiper-visible-switch{}
 
 

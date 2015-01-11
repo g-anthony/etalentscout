@@ -77,7 +77,6 @@
 				'calculateHeight': true,
 				'pagination': '.testimonial-pagination',
 				'paginationClickable': true
-				
 			});
 		
 		})(jQuery);

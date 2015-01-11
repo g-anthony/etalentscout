@@ -14,6 +14,7 @@ html{
 
 body{
 	font-family: 'Roboto', sans-serif;
+	font-size:16px;
 	font-weight:300;
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -350,31 +351,64 @@ footer .col-sm-4 p{
 }
 
 
-/* TESTIMONIAL
+/* HOMEPAGE TESTIMONIALs
 ==================================== */
-
 .testimonial-client{margin-top:40px;}
 
-.testimonial-client-info{margin-top:20px;}
-
-
 .testimonial-client-image{
-	height:115px;
-	width:115px;
+	height:125px;
+	width:125px;
 	margin:0 auto;
 	overflow:hidden;
+	border-radius: 50%;
+	position:relative;
 }
 
-.testimonial-content, .testimonial-client-info{
-	text-align:center;
+.testimonial-client-image img{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
+
+.testimonial-client-info{
+	margin:20px 0 40px;
+	padding:0;
+	list-style:none;
+}
+
+.testimonial-content, .testimonial-client-info{ text-align:center; }
 
 .testimonial-content{
-	font-size:30px;
+	font-size:22px;
+	padding:0 20px;
 }
 
-	
+.testimonial-pagination{
+	width:80px;
+	margin:0 auto;
+}
 
+.testimonial-pagination .swiper-pagination-switch {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background: #FFF;
+	margin-left: 15px;
+	border: 1px solid #FFF;
+	cursor: pointer;
+	border:2px solid #333746;
+}
+
+.testimonial-pagination .swiper-active-switch{
+	background-color:#e03627;
+	border:0;
+}
+
+.testimonial-pagination .swiper-pagination-switch:first-child{ margin-left:0; }
+
+	
 /* CUSTOM MODULES
 ==================================== */
 
@@ -719,6 +753,11 @@ footer .col-sm-4 p{
 	}
 
 	.how-it-works ol > li .list-content:before{ font-size:55px; }
+	
+	
+	/* HOMEPAGE TESTIMONIALs
+	==================================== */
+	.testimonial-content{font-size:30px;}
 
 }
 
