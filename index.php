@@ -9,10 +9,27 @@
     	<div class="overlay-color"></div>
         <div class="container overlay">
                 <h1><?php echo get_bloginfo( 'description' ); ?></h1>
+                <a href="#" id="play"></a>
                 <p>Create a free account and start utilizing profile tools and analytics to get discovered by the League of Legends esport community.</p>
                 <a class="btn btn-clear btn-clear-main-cta" href="">Get Started</a>
         </div><!-- /.container .overlay -->
+        <div id="feature-video">
+            <video id="feature_html5_api" class="vjs-tech" preload="auto" data-setup="{ &quot;techOrder&quot;: [&quot;html5&quot;, &quot;flash&quot;] }" src="http://player.vimeo.com/external/101380360.hd.mp4?s=7ea639d3669d59b33d372e64ed0332e8">
+		<source src="http://player.vimeo.com/external/101380360.hd.mp4?s=7ea639d3669d59b33d372e64ed0332e8" type="video/mp4">
+			</video>
+        </div><!-- /.feature-video -->
      </div><!-- /.jumbotron -->
+     
+     <div class="featured-section">
+     	<div class="container">
+          <div class="row">
+            <div class="col-xs-3">.col-md-4</div>
+            <div class="col-xs-3">.col-md-4</div>
+            <div class="col-xs-3">.col-md-4</div>
+            <div class="col-xs-3">.col-md-6</div>
+          </div><!-- /.featured-section -->
+     	</div><!-- /.container -->
+     </div>
 
 
 

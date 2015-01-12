@@ -17,8 +17,9 @@
   <body <?php body_class();?> >
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
+	<div class="container-fluid">
         <div class="navbar-header">
+        
           
           <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="LoL Talent Scout Logo" title="LoL Talent Scout Logo"></a>
           
@@ -34,8 +35,9 @@
           <a class="btn btn-clear" href="">Log in</a>
         </div><!-- /.navbar-btns pull-right -->
         
+ 
         </div><!-- /navbar-header -->
-       
+
         
         <div id="navbar" class="navbar-collapse collapse">
          <?php 
@@ -47,5 +49,6 @@
            wp_nav_menu( $args );
          ?>
        </div><!--/.navbar-collapse -->
+       </div><!--container-fluid -->
              
 	</nav>

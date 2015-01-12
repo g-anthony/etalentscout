@@ -33,6 +33,8 @@ function etalentscout_scripts(){
 	
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), '', true);
 	wp_enqueue_script('swiper_js', get_template_directory_uri().'/js/idangerous.swiper.min.js', array('jquery'), '', true);
+	wp_enqueue_script('loltalentscout_js', get_template_directory_uri().'/js/loltalentscout.js', array('jquery'), '', true);
+
 }
 
 add_action('wp_enqueue_scripts', 'etalentscout_scripts');
