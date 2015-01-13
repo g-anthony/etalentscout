@@ -80,7 +80,17 @@
 			});
 		
 		})(jQuery);
-   
+		
+			(function($){
+			
+			var featuredSwiper = $('.swiper-container').swiper({
+				'speed': 750, 
+				'calculateHeight': true,
+				'pagination': '.testimonial-pagination',
+				'paginationClickable': true
+			});
+		
+		})(jQuery);
    </script>
   </body>
 </html>

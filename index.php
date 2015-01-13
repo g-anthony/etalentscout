@@ -22,14 +22,81 @@
      
      <div class="featured-section">
      	<div class="container">
-          <div class="row">
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-6</div>
-          </div><!-- /.featured-section -->
-     	</div><!-- /.container -->
-     </div>
+          
+          <div class="featured-titles">
+            <h2 class="">Featured Players</h2>
+            <h2 class="pull-right">Featured Teams</h2>
+          </div><!--.featured-titles-->
+          
+          <div class="row wrapper">
+            <div class="col-xs-3">
+            	<div class="featured-image-wrap">
+                  <img src="#" alt="#">
+                </div><!--.featured-image-wrap-->
+                <h4>Player</h4>
+                <div class="featured-content">
+                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                  <p><i class="fa fa-map-marker"></i> Location</p>
+                </div><!-- .featured-content--->
+            </div><!--.col-xs-3-->
+            <div class="col-xs-3">
+            	<div class="featured-image-wrap">
+                  <img src="#" alt="#">
+                </div><!--.featured-image-wrap-->
+                <h4>Player</h4>
+                <div class="featured-content">
+                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                  <p><i class="fa fa-map-marker"></i> Location</p>
+                </div><!-- .featured-content--->
+            </div><!--.col-xs-3-->
+            <div class="col-xs-3">
+            	<div class="featured-image-wrap">
+                  <img src="#" alt="#">
+                </div><!--.featured-image-wrap-->
+                <h4>Player</h4>
+                <div class="featured-content">
+                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                  <p><i class="fa fa-map-marker"></i> Location</p>
+                </div><!-- .featured-content--->
+            </div><!--.col-xs-3-->
+            
+            <div class="col-xs-4">
+            	<div class="featured-team-wrap swiper-container">
+                  <?php 
+                    $args2 = array(
+                        'post_type' => 'profiles',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'team'
+							)
+						),
+                        'posts_per_page' => '3'
+                    );
+                    
+                    $featured_team_query = new WP_Query( $args2 );
+                ?>
+    
+                <?php while( $featured_team_query->have_posts() ): $featured_team_query-> the_post();?> 
+                
+                  <img src="#" alt="#">
+                  <div class="featured-team-content">
+                  <h4>Team Name</h4>
+                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                  <p><i class="fa fa-map-marker"></i> Location</p>
+                </div><!-- .featured-team-content--->
+          
+            <?php endwhile; ?>
+                  </div><!--.featured-team-wrap-->
+            </div><!--.col-xs-4-->
+            
+            
+            
+          </div><!--.row .wrapper-->
+     	</div><!-- .container -->
+     </div><!--.featured-section-->
 
 
 

@@ -17,7 +17,7 @@
   <body <?php body_class();?> >
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container-fluid">
+	<div class="container">
         <div class="navbar-header">
         
           
@@ -49,6 +49,6 @@
            wp_nav_menu( $args );
          ?>
        </div><!--/.navbar-collapse -->
-       </div><!--container-fluid -->
+       </div><!--container -->
              
 	</nav>
