@@ -28,6 +28,10 @@ body{
 
 img{max-width:100%;}
 
+a:focus{
+	text-decoration:none;
+	outline:0;
+}
 
 /* TYPOGRAPHY STYLES
 ==================================== */
@@ -440,6 +444,54 @@ footer .col-sm-4 p{
 }
 
 .testimonial-pagination .swiper-pagination-switch:first-child{ margin-left:0; }
+
+
+/* FREQUENTLY ASKED QUESTION (FAQ)
+----------------------------------------------*/
+.faq-banner{background-image:url('img/test-pic6.jpg');}
+
+.faq-block{margin-top:40px;}
+
+.faq-block:first-child{margin-top:0;}
+
+.faq-block-title i{margin-right:15px;}
+
+.faq-block-question{
+	transition: all 300ms;
+	color:#333746;
+	font-size:18px;
+	border-top:2px solid #CCCDCE;
+	padding:20px;
+	margin-top:20px;
+	display:block;
+	font-weight:bold;
+}
+
+.faq-block-question:first-child{margin-top:0;}
+
+.faq-block-question:hover{
+	cursor:pointer;
+	color:#337AB7;
+	text-decoration:none;
+}
+
+.ui-accordion-header-active{
+	transition: all 300ms;
+	color: #337AB7;
+	border-top: 4px solid #CCCDCE;
+	background-color: #EEF0F1;
+}
+
+.ui-accordion-header-icon{ margin-right:15px; }
+
+.faq-block-answer{ padding:20px; }
+
+.accordion-js{list-style:none;}
+
+.subpage-banner{
+	height:300px;
+	background-color:gray;
+}
 
 	
 /* CUSTOM MODULES

@@ -5,6 +5,8 @@
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 
 /* GLOBAL STYLES & SCRIPTS
 =============================== */
@@ -34,6 +36,10 @@ function etalentscout_scripts(){
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), '', true);
 	wp_enqueue_script('swiper_js', get_template_directory_uri().'/js/idangerous.swiper.min.js', array('jquery'), '', true);
 	wp_enqueue_script('loltalentscout_js', get_template_directory_uri().'/js/loltalentscout.js', array('jquery'), '', true);
+	
+	if( is_page('faq') ){
+		wp_enqueue_script('jquery-ui-accordion');
+	}
 
 }
 
