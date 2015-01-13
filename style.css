@@ -214,6 +214,20 @@ video#main-vid{
 	height: 580px;
 }
 
+.featured-wrapper{
+	padding: 78.5px 0;
+}
+
+.featured-titles{
+	overflow: hidden;
+}
+
+.featured-titles h2{
+	float: left;
+	margin-right: 20%;
+	color: #FFF;
+}
+
 .featured-section h4{
 	text-align: center;
 	margin-top: 0;

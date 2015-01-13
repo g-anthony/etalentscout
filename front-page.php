@@ -22,13 +22,14 @@
      
      <div class="featured-section">
      	<div class="container">
+          <div class="row featured-wrapper">
           
-          <div class="featured-titles">
-            <h2 class="">Featured Players</h2>
-            <h2 class="pull-right">Featured Teams</h2>
-          </div><!--.featured-titles-->
-          
-          <div class="row wrapper">
+            <div class="featured-titles">
+              <h2>Featured Players</h2>
+              <h2>Featured Teams</h2>
+              <div class="featured-pagination"></div>
+            </div><!--.featured-titles-->
+            
             <div class="col-xs-3">
             	<div class="featured-image-wrap">
                   <img src="#" alt="#">
@@ -70,7 +71,7 @@
                         'post_type' => 'profiles',
 						'tax_query' => array(
 							array(
-								'taxonomy' => 'team'
+								'taxonomy' => 'teams'
 							)
 						),
                         'posts_per_page' => '3'
@@ -81,8 +82,8 @@
     
                 <?php while( $featured_team_query->have_posts() ): $featured_team_query-> the_post();?> 
                 
-                  <img src="#" alt="#">
-                  <div class="featured-team-content">
+                <img src="#" alt="#">
+                <div class="featured-team-content">
                   <h4>Team Name</h4>
                   <p><i class="fa fa-dot-circle-o"></i> Lane</p>
                   <p><i class="fa fa-map-marker"></i> Location</p>
@@ -322,7 +323,7 @@
                             
                             	
                             
-
+  
                           </div><!--swiper-slide-->
                     
 
@@ -330,7 +331,7 @@
              </div><!--swipper-wrapper-->
             
             <div class="testimonial-pagination"></div>
-            
+             
             </div><!--testimonial-container-->
         </div><!--container-->
     </div><!--wrapper--> 
