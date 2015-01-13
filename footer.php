@@ -1,6 +1,6 @@
 
     
-    <footer class="wrapper">
+    <footer class="site-footer wrapper">
     	<div class="container">
         	<div class="row">
             

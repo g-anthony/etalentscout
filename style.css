@@ -46,6 +46,7 @@ h4, h5, h6{
 	font-weight:bold;
 	line-height:1.5;
 	color:#333746;
+	margin:0 0 20px 0;
 }
 
 
@@ -323,7 +324,7 @@ video#main-vid{
 
 /* FOOTER STYLES
 ==================================== */
-footer{  
+.site-footer{  
 	position: absolute;
   	bottom: 0;
   	width: 100%;
@@ -344,7 +345,7 @@ footer .footer-news .list .title-secondary{
 	margin-bottom:5px;
 }
 
-footer a{ color:#eef0f1; }
+.site-footer a{ color:#eef0f1; }
 
 footer a:hover{ color:#43c3d3; }
 
@@ -388,7 +389,7 @@ footer .col-sm-4 p{
 }
 
 
-/* HOMEPAGE TESTIMONIALs
+/* HOMEPAGE TESTIMONIALS
 ==================================== */
 .testimonial-client{margin-top:40px;}
 
@@ -447,7 +448,7 @@ footer .col-sm-4 p{
 
 
 /* FREQUENTLY ASKED QUESTION (FAQ)
-----------------------------------------------*/
+==================================== */
 .faq-banner{background-image:url('img/test-pic6.jpg');}
 
 .faq-block{margin-top:40px;}
@@ -492,6 +493,59 @@ footer .col-sm-4 p{
 	height:300px;
 	background-color:gray;
 }
+
+
+/* BLOG
+==================================== */
+.post-wrapper{}
+
+.post-wrapper .post{
+	padding-top:40px;
+	margin-top:40px;
+	border-top:2px solid #CCCDCE;
+}
+
+.post-wrapper .post:first-child{
+	padding:0;
+	border-top:0;
+}
+
+.post-wrapper .post:first-child{margin-top:0;}
+
+.post-header{ 
+	margin-bottom:30px; 
+	word-wrap: break-word;
+}
+
+.post-header h2{ 
+	line-height:normal;
+	margin-bottom:5px; 
+}
+
+.post-header h2 a{ color:#333746;}
+
+.post-header h2 a:hover{
+	color:#E03627;
+	text-decoration:none;
+	
+}
+
+.post-date{
+	font-weight: bold;
+	font-size: 14px;
+	color: #A0A0A0;
+}
+
+.post-content{margin-bottom:10px;}
+
+.post-footer{
+	background-color:#EEF0F1;
+	padding:20px;
+}
+
+
+
+
 
 	
 /* CUSTOM MODULES
@@ -723,7 +777,7 @@ footer .col-sm-4 p{
 	/* FOOTER STYLES 768px
 	==================================== */
 	
-	footer{ height:413px; }
+	.site-footer{ height:413px; }
 
 	.footer-news, .footer-info{ 
 		margin-top:0;
