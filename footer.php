@@ -1,6 +1,6 @@
 
     
-    <footer class="wrapper">
+    <footer class="site-footer wrapper">
     	<div class="container">
         	<div class="row">
             
@@ -70,16 +70,19 @@
     <?php wp_footer(); ?>
     
    <script>
-   		(function($){
+   
+   	(function($){
 			
-			var testimonialSwiper = $('.swiper-container').swiper({
-				'speed': 750, 
-				'calculateHeight': true,
-				'pagination': '.testimonial-pagination',
-				'paginationClickable': true
-			});
+		var testimonialSwiper = $('.swiper-container').swiper({
+			'speed': 750, 
+			'calculateHeight': true,
+			'pagination': '.testimonial-pagination',
+			'paginationClickable': true
+		});
 		
-		})(jQuery);
+	})(jQuery);
+		
+		
 		
 			(function($){
 			
@@ -91,6 +94,30 @@
 			});
 		
 		})(jQuery);
+		
+		(function($){	
+		
+		$('.accordion-js').accordion({
+			active: false, 
+			header: '.faq-block-question', 
+			heightStyle: 'content',
+			collapsible: true,
+			icons: {
+				header: 'fa fa-plus', 
+				activeHeader: 'fa fa-minus'
+			}, 
+			animate: {
+				easing: 'swing', 
+				duration: 350
+			}
+		
+		});
+		
+	})(jQuery);
+   
    </script>
+   
+   
+   
   </body>
 </html>
