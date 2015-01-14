@@ -31,8 +31,8 @@
         </button>
            
         <div class="navbar-btns">
-          <a class="btn btn-clear" href="">Sign up</a>
-          <a class="btn btn-clear" href="">Log in</a>
+          <a class="btn" href="">Sign up</a>
+          <a class="btn" href="">Log in</a>
         </div><!-- /.navbar-btns pull-right -->
         
  

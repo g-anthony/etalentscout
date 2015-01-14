@@ -52,7 +52,7 @@ get_header(); ?>
                             </div><!--post-category-->
                             
                         <?php else:?>
-                        	<ul class="post-category-list">
+                        	<ul class="post-category-list list-floated flat">
 							<?php
 								foreach($categories as $category) {
 									$output .= '<li><a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a></li>'.$separator;
@@ -61,8 +61,20 @@ get_header(); ?>
                                 echo trim($output, $separator);
                        	endif; ?>
                         	</ul>
-
+                            
+                            <?php 
+								$have_comments = have_comments();
+								if  ( $have_comments ):
+							?>
+							
+                            	<div class="post-comments"><?php comments_number(); ?></div>
+                                
+							<?php endif;?>
+                            
+                           
+                            
                     </footer><!--post-footer-->
+                    <a href="" class="btn btn-primary" title="">Read More</a>
                 
                 </article>
             

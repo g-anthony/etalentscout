@@ -28,10 +28,25 @@ body{
 
 img{max-width:100%;}
 
+a,
+a:link, 
+a:visited,
+a:active, 
 a:focus{
-	text-decoration:none;
+	color:#333746;
 	outline:0;
+	font-weight:bold;
+	text-decoration:none;
+	transition: all 300ms;
 }
+
+a:hover{
+	color:#E03627;
+	text-decoration:none;
+	transition: all 300ms;
+}
+
+
 
 /* TYPOGRAPHY STYLES
 ==================================== */
@@ -122,20 +137,6 @@ h4, h5, h6{
 
 .current-menu-item > a{background: #c12f22;}
 
-/* SIGN UP / LOG IN STLYES
-=============================== */
-
-.btn-clear, btn-clear:focus{
-	border: 2px solid #FFF;
-	padding: 14px;
-	color:#FFF;
-	margin-left: 15px;
-}
-
-.btn-clear:hover, .btn-clear:focus{
-	background: #FFF;
-	color: #e03627;
-}
 
 /* Main Marketing Message
 ==================================== */
@@ -347,7 +348,7 @@ footer .footer-news .list .title-secondary{
 
 .site-footer a{ color:#eef0f1; }
 
-footer a:hover{ color:#43c3d3; }
+.site-footer a:hover{ color:#43c3d3; }
 
 footer .title-secondary{
 	margin-bottom:20px;
@@ -536,15 +537,58 @@ footer .col-sm-4 p{
 	color: #A0A0A0;
 }
 
-.post-content{margin-bottom:10px;}
 
 .post-footer{
 	background-color:#EEF0F1;
 	padding:20px;
+	margin:20px 0;
 }
 
+.post-category-list{list-style-none;}
 
 
+
+/* BOOTSTRAP MODULE 
+==================================== */
+
+	/* button module 
+	-----------------------------------*/
+	.btn, 
+	a.btn, 
+	.btn:link{
+		color:#fff;
+		font-family: 'Roboto', sans-serif;
+		font-size:18px;
+		padding:15px;
+		width:100%;
+		border-radius:8px;
+		border: 2px solid #FFF;
+		
+	}
+	
+	.btn:hover{	
+		background: #FFF;
+		color: #e03627;
+	}	
+	
+	.btn-primary, 
+	a.btn-primary, 
+	.btn-primary:link{
+		background-color:#333746;
+		border:0;
+	}
+	
+	.btn-primary:hover, 
+	.btn-primary:focus, 
+	.btn-primary.focus, 
+	.btn-primary:active, 
+	.btn-primary.active, 
+	.open>.dropdown-toggle.btn-primary{ 
+		color:#fff;
+		background-color:#E03627; 
+		border:0;
+	
+	}
 
 
 	
@@ -570,8 +614,9 @@ footer .col-sm-4 p{
 	.flat{
 		margin:0;
 		padding:0;
+		list-style:none;
 	}
-	
+
 	.list > li{margin-top:15px;}
 
 	.list > li:first-child{margin-top:0;}
