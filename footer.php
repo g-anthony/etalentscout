@@ -84,12 +84,12 @@
 		
 		
 		
-			(function($){
+		(function($){
 			
-			var featuredSwiper = $('.swiper-container').swiper({
+			var featuredSwiper = $('.swiper-featured-container').swiper({
 				'speed': 750, 
 				'calculateHeight': true,
-				'pagination': '.testimonial-pagination',
+				'pagination': '.featured-pagination',
 				'paginationClickable': true
 			});
 		

@@ -144,7 +144,7 @@ h4, h5, h6{
 	position: relative;
 	background: transparent url('http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg') no-repeat;
 	background-size: cover;
-	height: 450px;
+	height: 480px;
 	margin-bottom: 0;
 }
 
@@ -162,6 +162,7 @@ video#main-vid{
 }
 
 .overlay{
+	width: 70%;
 	display: block;
 	position: absolute;
 	top: 29%;
@@ -190,7 +191,7 @@ video#main-vid{
 	height: 105px;
 	display: block;
 	margin-left: 800px;
-	position: relative;
+	position: absolute;
 	top: 0;
 	-webkit-opacity: 0.5;
 	-moz-opacity: 0.5;
@@ -211,65 +212,70 @@ video#main-vid{
 
 .featured-section{
 	background-color: #333746;
-	height: 580px;
+}
+
+.featured-section ul{
+	list-style-type: none;
 }
 
 .featured-wrapper{
-	padding: 78.5px 0;
+	padding: 68.5px 0;
 }
 
-.featured-titles{
-	overflow: hidden;
-}
-
-.featured-titles h2{
-	float: left;
-	margin-right: 20%;
-	color: #FFF;
-}
-
-.featured-section h4{
+.featured-title-section{
 	text-align: center;
+	color: #FFF;
+	margin: 0 0 40px 0;
+}
+
+.featured-sub-title{
+	padding-left: 15px;	
+}
+
+.featured-section{
 	margin-top: 0;
 	line-height: 1;
 	margin-bottom: 15px;
 }
 
 .featured-image-wrap{
-	width: 100%;
-	height: 208px;
 	padding: 15px;
-	background-color: #929191;
+}
+
+.featured-col-3{
+	background-color: #FFF;
+	margin-bottom: 40px;
 }
 
 .featured-team-wrap{
-	width: 100%;
-	height: 358px;
-	background-color: #929191;
-}
-
-.featured-image-wrap img{
-	width: 200px;
-	height: 178px;
-}
-
-.featured-team-wrap img {
-	height: 100%;
-}
-
-div.col-xs-3{
 	background-color: #FFF;
-	width: 19.62%;
-	margin-right: 22px;
-	padding-left: 0;
-	padding-right: 0;
+	margin-bottom: 40px;
+	overflow: hidden;
 }
 
-div.col-xs-4{
-	width: 30%;
-	background-color: #FFF;
-	padding-left: 0;
-	padding-right: 0;
+.featured-pagination{
+	width: 90px;
+	margin: 0 auto 40px auto;
+}
+
+.featured-pagination .swiper-pagination-switch {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border:2px solid #FFF;
+}
+
+.featured-pagination .swiper-active-switch{
+	background-color: #44c3d4;
+	border:0;
+}
+
+.featured-team-image-wrap img{
+	height: 481px; 
 }
 
 .featured-content{
@@ -283,7 +289,7 @@ div.col-xs-4{
 	bottom: 0;
 	width: 100%;
 	padding: 17px 15px 15px 15px;
-	background-color: rgba(239,240,242,0.5);
+	background-color: rgba(239,240,242,0.6);
 }
 
 .featured-team-content h4{

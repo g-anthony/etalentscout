@@ -21,82 +21,110 @@
      </div><!-- /.jumbotron -->
      
      <div class="featured-section">
-     	<div class="container">
-          <div class="row featured-wrapper">
-          
-            <div class="featured-titles">
-              <h2>Featured Players</h2>
-              <h2>Featured Teams</h2>
-              <div class="featured-pagination"></div>
-            </div><!--.featured-titles-->
-            
-            <div class="col-xs-3">
-            	<div class="featured-image-wrap">
-                  <img src="#" alt="#">
-                </div><!--.featured-image-wrap-->
-                <h4>Player</h4>
-                <div class="featured-content">
-                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                  <p><i class="fa fa-map-marker"></i> Location</p>
-                </div><!-- .featured-content--->
-            </div><!--.col-xs-3-->
-            <div class="col-xs-3">
-            	<div class="featured-image-wrap">
-                  <img src="#" alt="#">
-                </div><!--.featured-image-wrap-->
-                <h4>Player</h4>
-                <div class="featured-content">
-                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                  <p><i class="fa fa-map-marker"></i> Location</p>
-                </div><!-- .featured-content--->
-            </div><!--.col-xs-3-->
-            <div class="col-xs-3">
-            	<div class="featured-image-wrap">
-                  <img src="#" alt="#">
-                </div><!--.featured-image-wrap-->
-                <h4>Player</h4>
-                <div class="featured-content">
-                  <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                  <p><i class="fa fa-map-marker"></i> Location</p>
-                </div><!-- .featured-content--->
-            </div><!--.col-xs-3-->
-            
-            <div class="col-xs-4">
-            	<div class="featured-team-wrap swiper-container">
-                  <?php 
-                    $args2 = array(
-                        'post_type' => 'profiles',
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'teams'
-							)
-						),
-                        'posts_per_page' => '3'
-                    );
+       <div class="container">
+       
+       <div class="wrapper">
+           <h2 class="featured-title-section">Featured Players</h2>
+           <div class="row">
+                <ul class="clearfix flat">
+                     <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
                     
-                    $featured_team_query = new WP_Query( $args2 );
-                ?>
-    
-                <?php while( $featured_team_query->have_posts() ): $featured_team_query-> the_post();?> 
-                
-                <img src="#" alt="#">
-                <div class="featured-team-content">
-                  <h4>Team Name</h4>
-                  <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                  <p><i class="fa fa-map-marker"></i> Location</p>
-                </div><!-- .featured-team-content--->
+                     <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
+                    
+                    <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
+                </ul>      
+           </div><!--.row-->
+       </div><!-- .wrapper -->
           
-            <?php endwhile; ?>
-                  </div><!--.featured-team-wrap-->
-            </div><!--.col-xs-4-->
-            
-            
-            
-          </div><!--.row .wrapper-->
-     	</div><!-- .container -->
+          
+          
+          <div class="row">
+            <h2 class="featured-title-section">Featured Teams</h2>
+            <div class="featured-pagination"></div>
+            <ul class="clearfix flat">      
+              <li class="col-md-4">
+            	<div class="featured-team-wrap swiper-featured-container">
+                  <div class="swiper-wrapper">
+					  <?php 
+                        $args2 = array(
+                            'post_type' => 'profile',
+                            'posts_per_page' => '3'
+                        );
+                        
+                        $featured_team_query = new WP_Query( $args2 );
+                      ?>
+                  
+                      <?php while( $featured_team_query->have_posts() ): $featured_team_query-> the_post();?>
+                      
+                      <?php
+                        //Gather Meta Box Values
+					    $featuredTeam_name = get_post_meta( get_the_ID(), 'featured_team_name', true );
+                        $featuredTeam_rank = get_post_meta( get_the_ID(), 'featured_team_rank', true );
+                        $featuredTeam_location = get_post_meta( get_the_ID(), 'featured_team_location', true ); 
+                      ?>
+                      
+                         <div class="swiper-slide">
+                            <div class="featured-team-image-wrap">
+							  <?php the_post_thumbnail(); ?>
+                            </div><!--team-image-wrap-->
+                            <div class="featured-team-content">
+                              <?php if( !empty( $featuredTeam_name ) ) {?>
+                                <h4><?php echo $featuredTeam_name; ?></h4>
+                              <?php }?>
+                              <?php if( !empty( $featuredTeam_rank ) ) {?>
+                                <p><i class="fa fa-dot-circle-o"></i> <?php echo $featuredTeam_rank; ?></p>
+                              <?php }?>
+                              <?php if( !empty( $featuredTeam_location ) ) {?>
+                                <p><i class="fa fa-map-marker"></i> <?php echo $featuredTeam_location; ?></p>
+                              <?php }?>
+                            </div><!-- .featured-team-content--->
+                          </div><!--swiper-slide-->
+                
+                      <?php endwhile; ?>
+                    
+                    </div><!--.swiper-wrapper-->
+                </div><!--.featured-team-wrap .swiper-featured-container-->
+              </li><!--.col-xs-4-->
+            </ul>
+          </div><!--.row -->
+         
+        </div><!--.container-->
      </div><!--.featured-section-->
 
 
