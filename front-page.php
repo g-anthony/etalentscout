@@ -21,15 +21,111 @@
      </div><!-- /.jumbotron -->
      
      <div class="featured-section">
-     	<div class="container">
+       <div class="container">
+       
+       <div class="wrapper">
+           <h2 class="featured-title-section">Featured Players</h2>
+           <div class="row">
+                <ul class="clearfix flat">
+                     <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
+                    
+                     <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
+                    
+                    <li class="col-md-3">
+                       <div class="featured-col-3">
+                         <div class="featured-image-wrap">
+                           <img src="http://localhost/projects/etalentscout/wp-content/uploads/2015/01/lefty_profile.png" alt="#">
+                         </div><!--.featured-image-wrap-->
+                         <h4 class="featured-sub-title">Player</h4>
+                         <div class="featured-content">
+                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                           <p><i class="fa fa-map-marker"></i> Location</p>
+                         </div><!-- .featured-content--->
+                       </div><!--.featured-col-3 .col-md-3-->  
+                     </li>
+                </ul>      
+           </div><!--.row-->
+       </div><!-- .wrapper -->
+          
+          
+          
           <div class="row">
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-4</div>
-            <div class="col-xs-3">.col-md-6</div>
-          </div><!-- /.featured-section -->
-     	</div><!-- /.container -->
-     </div>
+            <h2 class="featured-title-section">Featured Teams</h2>
+            <div class="featured-pagination"></div>
+            <ul class="clearfix flat">      
+              <li class="col-md-4">
+            	<div class="featured-team-wrap swiper-featured-container">
+                  <div class="swiper-wrapper">
+					  <?php 
+                        $args2 = array(
+                            'post_type' => 'profile',
+                            'posts_per_page' => '3'
+                        );
+                        
+                        $featured_team_query = new WP_Query( $args2 );
+                      ?>
+                  
+                      <?php while( $featured_team_query->have_posts() ): $featured_team_query-> the_post();?>
+                      
+                      <?php
+                        //Gather Meta Box Values
+					    $featuredTeam_name = get_post_meta( get_the_ID(), 'featured_team_name', true );
+                        $featuredTeam_rank = get_post_meta( get_the_ID(), 'featured_team_rank', true );
+                        $featuredTeam_location = get_post_meta( get_the_ID(), 'featured_team_location', true ); 
+                      ?>
+                      
+                         <div class="swiper-slide">
+                            <div class="featured-team-image-wrap">
+							  <?php the_post_thumbnail(); ?>
+                            </div><!--team-image-wrap-->
+                            <div class="featured-team-content">
+                              <?php if( !empty( $featuredTeam_name ) ) {?>
+                                <h4><?php echo $featuredTeam_name; ?></h4>
+                              <?php }?>
+                              <?php if( !empty( $featuredTeam_rank ) ) {?>
+                                <p><i class="fa fa-dot-circle-o"></i> <?php echo $featuredTeam_rank; ?></p>
+                              <?php }?>
+                              <?php if( !empty( $featuredTeam_location ) ) {?>
+                                <p><i class="fa fa-map-marker"></i> <?php echo $featuredTeam_location; ?></p>
+                              <?php }?>
+                            </div><!-- .featured-team-content--->
+                          </div><!--swiper-slide-->
+                
+                      <?php endwhile; ?>
+                    
+                    </div><!--.swiper-wrapper-->
+                </div><!--.featured-team-wrap .swiper-featured-container-->
+              </li><!--.col-xs-4-->
+            </ul>
+          </div><!--.row -->
+         
+        </div><!--.container-->
+     </div><!--.featured-section-->
 
 
 
@@ -255,7 +351,7 @@
                             
                             	
                             
-
+  
                           </div><!--swiper-slide-->
                     
 
@@ -263,7 +359,7 @@
              </div><!--swipper-wrapper-->
             
             <div class="testimonial-pagination"></div>
-            
+             
             </div><!--testimonial-container-->
         </div><!--container-->
     </div><!--wrapper--> 

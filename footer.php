@@ -84,7 +84,18 @@
 		
 		
 		
-	(function($){		
+		(function($){
+			
+			var featuredSwiper = $('.swiper-featured-container').swiper({
+				'speed': 750, 
+				'calculateHeight': true,
+				'pagination': '.featured-pagination',
+				'paginationClickable': true
+			});
+		
+		})(jQuery);
+		
+		(function($){	
 		
 		$('.accordion-js').accordion({
 			active: false, 
