@@ -16,7 +16,6 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	font-weight:300;
-	padding-top: 50px;
 	padding-bottom: 20px;
 	margin-bottom:933px; /* margin-bottom is for the sticky footer feature */
 	color:#333746;
@@ -67,12 +66,7 @@ h4, h5, h6{
 
 /* NAVIGATION STYLES
 ==================================== */
-.admin-bar .navbar-fixed-top{margin-top:32px;}
 
-.navbar {
-	font-family:'Lovelo';
-	min-height: 100px;
-}
 
 .navbar-nav{
 	width: 100%;
@@ -90,22 +84,33 @@ h4, h5, h6{
 	font-size: 30px;
 }
 
-.navbar-btns{
-	padding: 15px 0;
-	float: right;
-}
 
 .navbar-brand{
-	height: 85px;
-	width:166px;
-	padding:7.5px;
-	margin-left: 15%;
+	float: none;
+	height: auto;
+	padding:20px 0;
+	margin:0;
+	text-align:center;
+}
+
+.navbar-mobile{
+	padding:0 15px;
+	margin-bottom:20px;
 }
 
 .navbar-collapse{
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.navbar-cta{
+	padding:0 15px;
+	margin-bottom:20px;
+}
+
+.navbar-cta .btn{ margin-top:20px; }
+
+.navbar-cta .btn:first-child{ margin-top:0; }
 
 .navbar-inverse .navbar-nav > li > a{color:#FFF;}
 
@@ -116,18 +121,20 @@ h4, h5, h6{
 	border: none;
 }
 
-.navbar-toggle {
-	margin: 15px;
-	clear: both;
-	border: 2px solid;
-	padding: 17px 10px;
-	float: right;
+.navbar-toggle{
+	float:none;
+	margin:0;
 }
+
+.navbar-toggle .fa{font-size:24px;}
 
 .navbar-inverse .navbar-toggle {border-color: #FFF;}
 
 .navbar-inverse .navbar-toggle:hover, 
-.navbar-inverse .navbar-toggle:focus {background-color: #343746;}
+.navbar-inverse .navbar-toggle:focus {
+	background: #FFF;
+	color: #E03627;
+}
 
 .navbar-inverse .navbar-collapse, 
 .navbar-inverse .navbar-form {
