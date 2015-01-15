@@ -30,92 +30,59 @@
 
            
            
-               <div class="featured-players-container swiper-featured-players-container row">
+               <div class="featured-players-container row">
                		<h2 class="featured-title-section">Featured Players</h2>
                     
-                        <ul class="featured-players-list list clearfix flat">
+                    <div class="featured-players-pagination"></div>
+                    	<div class="swiper-featured-players">
+                        	
+                                <ul class="featured-players-list swiper-wrapper clearfix flat">
+                                
+                                    
+                                     <li class="featured-player swiper-slide col-xs-12 col-sm-6 col-md-3 flat">
+                                     	
+                                           <div class="featured-player-inner-wrap">
+                                           
+                                                 <div class="featured-player-image">
+                                                   <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
+                                                 </div><!--.featured-player-image-->
+                                                 
+                                                 <h4 class="featured-sub-title">Player</h4>
+                                                 
+                                                 <div class="featured-player-info">
+                                                   <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                                                   <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                                                   <p><i class="fa fa-map-marker"></i> Location</p>
+                                                 </div><!-- .featured-player-info--->
+                                                 
+                                           </div><!--featured-player-inner-wrap-->
+                                       
+                                     </li><!--featured-player-->
+                                    
+                                      <li class="featured-player swiper-slide col-xs-12 col-sm-6 col-md-3 flat">
+                                     	
+                                           <div class="featured-player-inner-wrap">
+                                           
+                                                 <div class="featured-player-image">
+                                                   <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
+                                                 </div><!--.featured-player-image-->
+                                                 
+                                                 <h4 class="featured-sub-title">Player</h4>
+                                                 
+                                                 <div class="featured-player-info">
+                                                   <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                                                   <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                                                   <p><i class="fa fa-map-marker"></i> Location</p>
+                                                 </div><!-- .featured-player-info--->
+                                                 
+                                           </div><!--featured-player-inner-wrap-->
+                                        
+                                     </li><!--featured-player-->
+                                     
+                              		</ul>
+                              
+                        </div><!--swipper-featured-players-->
                         
-                             <li class="featured-player col-xs-12 col-sm-6 col-md-3">
-                             
-                                   <div class="featured-player-inner-wrap">
-                                   
-                                         <div class="featured-player-image">
-                                           <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
-                                         </div><!--.featured-player-image-->
-                                         
-                                         <h4 class="featured-sub-title">Player</h4>
-                                         
-                                         <div class="featured-player-info">
-                                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                                           <p><i class="fa fa-map-marker"></i> Location</p>
-                                         </div><!-- .featured-player-info--->
-                                         
-                                   </div><!--featured-player-inner-wrap-->
-                                     
-                             </li><!--featured-player-->
-                            
-                             <li class="featured-player col-xs-12 col-sm-6 col-md-3">
-                             
-                                   <div class="featured-player-inner-wrap">
-                                   
-                                         <div class="featured-player-image">
-                                           <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
-                                         </div><!--.featured-player-image-->
-                                         
-                                         <h4 class="featured-sub-title">Player</h4>
-                                         
-                                         <div class="featured-player-info">
-                                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                                           <p><i class="fa fa-map-marker"></i> Location</p>
-                                         </div><!-- .featured-player-info--->
-                                         
-                                   </div><!--featured-player-inner-wrap-->
-                                     
-                             </li><!--featured-player-->
-                             
-                             <li class="featured-player col-xs-12 col-sm-6 col-md-3">
-                             
-                                   <div class="featured-player-inner-wrap">
-                                   
-                                         <div class="featured-player-image">
-                                           <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
-                                         </div><!--.featured-player-image-->
-                                         
-                                         <h4 class="featured-sub-title">Player</h4>
-                                         
-                                         <div class="featured-player-info">
-                                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                                           <p><i class="fa fa-map-marker"></i> Location</p>
-                                         </div><!-- .featured-player-info--->
-                                         
-                                   </div><!--featured-player-inner-wrap-->
-                                     
-                             </li><!--featured-player-->
-                                                         
-                              <li class="featured-player col-xs-12 col-sm-6 col-md-3">
-                             
-                                   <div class="featured-player-inner-wrap">
-                                   
-                                         <div class="featured-player-image">
-                                           <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
-                                         </div><!--.featured-player-image-->
-                                         
-                                         <h4 class="featured-sub-title">Player</h4>
-                                         
-                                         <div class="featured-player-info">
-                                           <p><i class="fa fa-dot-circle-o"></i> Rank</p>
-                                           <p><i class="fa fa-dot-circle-o"></i> Lane</p>
-                                           <p><i class="fa fa-map-marker"></i> Location</p>
-                                         </div><!-- .featured-player-info--->
-                                         
-                                   </div><!--featured-player-inner-wrap-->
-                                     
-                             </li><!--featured-player-->
-                                                      
-                        </ul>      
                </div><!--featured-players-->
        
           

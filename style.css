@@ -198,7 +198,6 @@ video#main-vid{
 	width: 105px;
 	height: 105px;
 	display: block;
-	margin-left: 800px;
 	position: absolute;
 	top: 0;
 	-webkit-opacity: 0.5;
@@ -218,7 +217,10 @@ video#main-vid{
 /* FEATURED PLAYERS / TEAMS
 ==================================== */
 
-.featured-player-inner-wrap{background-color:#fff;}
+.featured-player-inner-wrap{
+	background-color:#fff;
+	margin:0 15px;
+}
 
 .featured-section{
 	background-color: #333746;
@@ -259,12 +261,12 @@ video#main-vid{
 	overflow: hidden;
 }
 
-.featured-pagination{
+.featured-pagination, .featured-players-pagination{
 	width: 90px;
 	margin: 0 auto 40px auto;
 }
 
-.featured-pagination .swiper-pagination-switch {
+.featured-pagination .swiper-pagination-switch, .featured-players-pagination .swiper-pagination-switch {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -275,7 +277,7 @@ video#main-vid{
 	border:2px solid #FFF;
 }
 
-.featured-pagination .swiper-active-switch{
+.featured-pagination .swiper-active-switch, .featured-players-pagination .swiper-active-switch{
 	background-color: #44c3d4;
 	border:0;
 }
@@ -310,6 +312,9 @@ video#main-vid{
 .featured-team-content p:last-child {
 	margin-bottom: 0;
 }
+
+
+
 
 
 /* HOW IT WORKS
@@ -827,14 +832,14 @@ footer .col-sm-4 p{
 	/* FEATURED PLAYERS / TEAMS
 	==================================== */
 	
-	.featured-players .col-sm-6{
+	.featured-players-list .col-sm-6{
 		width:50%;
 	}
 	
-	.featured-players .list > li{margin-top:0;}
+	.featured-players-list li{margin-top:0;}
 	
-	.featured-players .list > li:first-child, 
-	.featured-players .list > li:first-child + li{ margin-bottom:30px;}
+	.featured-players-list li:first-child, 
+	.featured-players-list li:first-child + li{ margin-bottom:30px;}
 
 }
 

@@ -81,6 +81,33 @@
 		});
 		
 	})(jQuery);
+	
+	(function($){
+		var windowWidth = $(window).width();
+		var mobileView = 559;
+			
+
+		
+		if( windowWidth <= mobileView){
+			
+			var featuredPlayerSwiper = $('.swiper-featured-players').swiper({
+				'speed': 750, 
+				'calculateHeight': true,
+				'pagination': '.featured-players-pagination',
+				'paginationClickable': true
+			});
+			
+		}else{
+			
+			//take swiper off
+			
+			console.log('take off swiper');
+			$('.featured-players-list').unwrap().removeClass('swiper-wrapper');
+			$('.featured-player').removeClass('swiper-slide');
+		}
+		
+
+	})(jQuery);
 		
 		
 		
@@ -92,6 +119,8 @@
 				'pagination': '.featured-pagination',
 				'paginationClickable': true
 			});
+			
+			
 		
 		})(jQuery);
 		
