@@ -23,8 +23,6 @@ body{
 
 .wrapper{ padding: 40px 0; }
 
-.wrapper-secondary{ background-color:#eef0f1; }
-
 img{max-width:100%;}
 
 a,
@@ -217,38 +215,22 @@ video#main-vid{
 /* FEATURED PLAYERS / TEAMS
 ==================================== */
 
+.featured-players-container{ margin-bottom:40px; }
+
 .featured-player-inner-wrap{
 	background-color:#fff;
 	margin:0 15px;
 }
 
-.featured-section{
-	background-color: #333746;
-}
-
-.featured-section ul{
-	list-style-type: none;
-}
 
 .featured-wrapper{
 	padding: 68.5px 0;
-}
-
-.featured-title-section{
-	text-align: center;
-	color: #FFF;
-	margin: 0 0 40px 0;
 }
 
 .featured-sub-title{
 	padding-left: 15px;	
 }
 
-.featured-section{
-	margin-top: 0;
-	line-height: 1;
-	margin-bottom: 15px;
-}
 
 .featured-player-image{
 	padding: 10px;
@@ -259,27 +241,6 @@ video#main-vid{
 	background-color: #FFF;
 	margin-bottom: 40px;
 	overflow: hidden;
-}
-
-.featured-pagination, .featured-players-pagination{
-	width: 90px;
-	margin: 0 auto 40px auto;
-}
-
-.featured-pagination .swiper-pagination-switch, .featured-players-pagination .swiper-pagination-switch {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border-radius: 10px;
-	margin-right: 15px;
-	margin-bottom: 20px;
-	cursor: pointer;
-	border:2px solid #FFF;
-}
-
-.featured-pagination .swiper-active-switch, .featured-players-pagination .swiper-active-switch{
-	background-color: #44c3d4;
-	border:0;
 }
 
 .featured-team-image-wrap img{
@@ -629,7 +590,6 @@ footer .col-sm-4 p{
 .post-header h2 a:hover{
 	color:#E03627;
 	text-decoration:none;
-	
 }
 
 .post-date{
@@ -646,6 +606,40 @@ footer .col-sm-4 p{
 }
 
 .post-category-list{list-style-none;}
+
+
+
+/* SWIPER SLIDER
+==================================== */
+.swiper-container{ overflow:hidden; }
+
+.swiper-pagination{ text-align:center; }
+
+.swiper-pagination-switch{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid #333746;	
+	margin-left:15px;
+}
+
+.swiper-pagination-switch:first-child{margin-left:0;}
+
+.swiper-active-switch{
+	background-color:#E03627;
+	border:0;
+}
+
+
+.bg-secondary .swiper-pagination-switch{ border-color:#fff; }
+
+.bg-secondary .swiper-active-switch{ background-color:#43C3D3; }
+
+.title-swiper-pagination{ margin-bottom:40px; }
+
+.title-swiper-pagination .title-section{ margin-bottom:20px; }
 
 
 
@@ -688,13 +682,21 @@ footer .col-sm-4 p{
 		color:#fff;
 		background-color:#E03627; 
 		border:0;
-	
 	}
-
+	
 
 	
 /* CUSTOM MODULES
 ==================================== */
+
+	/* background module
+	-----------------------------------*/
+	.bg-primary{ background-color:#fff; }
+	
+	.bg-secondary{ background-color: #333746; }
+	
+	.bg-tertiary{ background-color:#EEF0F1;}
+	
 
 	/* title section module 
 	-----------------------------------*/
@@ -707,7 +709,11 @@ footer .col-sm-4 p{
 	
 	.title-section-left{ margin:0 0 10px 0; }
 	
-	.wrapper-secondary .title-section span{background-color:#EEF0F1;}
+	.bg-secondary .title-section{ color:#fff; }
+	
+	.bg-secondary .title-section span{ background-color:#333746; }
+	
+	.bg-tertiary .title-section span{ background-color:#EEF0F1; }
 	
 	
 	/* list module 
@@ -1056,7 +1062,7 @@ footer .col-sm-4 p{
 	/* FEATURED PLAYERS / TEAMS
 	==================================== */
 	
-	.featured-players .col-md-3{
+	.featured-players-list .col-md-3{
 		width:25%;
 	}
 

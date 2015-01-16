@@ -24,17 +24,18 @@
      
      
      
-<div class="featured-section">    
+<div class="featured-profiles bg-secondary">    
     <div class="wrapper">
     	<div class="container">
 
-           
-           
                <div class="featured-players-container row">
-               		<h2 class="featured-title-section">Featured Players</h2>
+               
+               		<div class="title-swiper-pagination">
+               			<h2 class="title-section"><span>Featured Players</span></h2>
+                    	<div class="featured-players-pagination swiper-pagination"></div>
+                    </div><!--title-swiper-pagination-->
                     
-                    <div class="featured-players-pagination"></div>
-                    	<div class="swiper-featured-players">
+                    	<div class="swiper-featured-players swiper-container">
                         	
                                 <ul class="featured-players-list swiper-wrapper clearfix flat">
                                 
@@ -79,6 +80,44 @@
                                         
                                      </li><!--featured-player-->
                                      
+                                       <li class="featured-player swiper-slide col-xs-12 col-sm-6 col-md-3 flat">
+                                     	
+                                           <div class="featured-player-inner-wrap">
+                                           
+                                                 <div class="featured-player-image">
+                                                   <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
+                                                 </div><!--.featured-player-image-->
+                                                 
+                                                 <h4 class="featured-sub-title">Player</h4>
+                                                 
+                                                 <div class="featured-player-info">
+                                                   <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                                                   <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                                                   <p><i class="fa fa-map-marker"></i> Location</p>
+                                                 </div><!-- .featured-player-info--->
+                                                 
+                                           </div><!--featured-player-inner-wrap-->
+                                        
+                                     </li><!--featured-player-->
+                                                                           <li class="featured-player swiper-slide col-xs-12 col-sm-6 col-md-3 flat">
+                                     	
+                                           <div class="featured-player-inner-wrap">
+                                           
+                                                 <div class="featured-player-image">
+                                                   <img src="<?php echo get_template_directory_uri();?>/img/dyrus-profile.jpg" alt="#">
+                                                 </div><!--.featured-player-image-->
+                                                 
+                                                 <h4 class="featured-sub-title">Player</h4>
+                                                 
+                                                 <div class="featured-player-info">
+                                                   <p><i class="fa fa-dot-circle-o"></i> Rank</p>
+                                                   <p><i class="fa fa-dot-circle-o"></i> Lane</p>
+                                                   <p><i class="fa fa-map-marker"></i> Location</p>
+                                                 </div><!-- .featured-player-info--->
+                                                 
+                                           </div><!--featured-player-inner-wrap-->
+                                        
+                                     </li><!--featured-player-->                                    
                               		</ul>
                               
                         </div><!--swipper-featured-players-->
@@ -89,7 +128,7 @@
           
           
                 <div class="featured-teams row">
-                    <h2 class="featured-title-section">Featured Teams</h2>
+                    <h2 class="title-section"><span>Featured Teams</span></h2>
                     <div class="featured-pagination"></div>
                     
                     
@@ -209,7 +248,7 @@
      
      
   
-   <div class="made-for-details wrapper wrapper-secondary">
+   <div class="made-for-details wrapper bg-tertiary">
    <div class="container">
    
       <div class="made-for-players row">
@@ -320,7 +359,7 @@
         <div class="container">
             <h2 class="title-section"><span>What They Say</span></h2>
             
-             <div class="testimonial-container swiper-container">
+             <div class="testimonial-container swiper-testimonials swiper-container">
             	<div class="swiper-wrapper">
 				<?php 
                     $args = array(

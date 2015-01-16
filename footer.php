@@ -73,7 +73,7 @@
    
    	(function($){
 			
-		var testimonialSwiper = $('.swiper-container').swiper({
+		var testimonialSwiper = $('.swiper-testimonials').swiper({
 			'speed': 750, 
 			'calculateHeight': true,
 			'pagination': '.testimonial-pagination',
@@ -82,34 +82,118 @@
 		
 	})(jQuery);
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	(function($){
-		var windowWidth = $(window).width();
-		var mobileView = 559;
-			
-
 		
-		if( windowWidth <= mobileView){
+		var mobileView = 559;
+		var windowWidth = $(window).width();
+		var swiperExists = $('.swiper-featured-players').length;
+		var playersTitle = $('.featured-players-container .title-section');
+		var playersPagination = $('.featured-players-pagination');
+		var playersList = $('.featured-players-list');
+		var player = $('.featured-player');
+		var removeCounter = 0;
+		var displayCounter = 0;
+		
+		checkSwiperExists();
+
+		function displaySwiper(){
 			
-			var featuredPlayerSwiper = $('.swiper-featured-players').swiper({
+			playersList.addClass('swiper-wrapper');
+			player.addClass('swiper-slide flat');
+			$('.featured-player-inner-wrap').css('margin', 15);
+		
+			
+			window.featuredPlayerSwiper = $('.swiper-featured-players').swiper({
 				'speed': 750, 
 				'calculateHeight': true,
 				'pagination': '.featured-players-pagination',
 				'paginationClickable': true
 			});
 			
-		}else{
 			
-			//take swiper off
 			
-			console.log('take off swiper');
-			$('.featured-players-list').unwrap().removeClass('swiper-wrapper');
-			$('.featured-player').removeClass('swiper-slide');
-		}
-		
+			displayCounter++;
 
+		}//displaySwiper
+		
+		
+		function removeSwiper(){
+			
+			playersPagination.remove();
+			
+			playersTitle.unwrap();
+			
+			playersList.removeClass('swiper-wrapper');
+			playersList.removeAttr('style'); 
+			
+			player.removeClass('flat swiper-slide swiper-slide-visible swiper-slide-active');
+			player.removeAttr('style');
+				
+			$('.featured-player-inner-wrap').css('margin', 0);
+			
+			
+
+			removeCounter++;
+			
+		}//removeSwiper
+			
+
+		function checkSwiperExists(){
+			
+			if( windowWidth > mobileView && playersList.parent().is('.swiper-featured-players') ){
+				playersList.unwrap();
+				swiperExists = $('.swiper-featured-players').length;
+				
+			}else if( windowWidth <= mobileView && playersList.parent().is('.featured-players-container') ){
+				playersList.wrap('<div class="swiper-featured-players"></div>');
+				swiperExists = $('.swiper-featured-players').length;
+			}
+			
+			if( windowWidth <= mobileView && swiperExists > 0 && displayCounter == 0){
+				//swiper exists, display swiper
+				displaySwiper();
+				
+			}else if( swiperExists == 0 && removeCounter == 0){
+				//swiper does not exists, remove swiper and loop through once
+				removeSwiper();
+			}
+
+		}//checkSwiperExists
+		
+		
+		$(window).resize(function(){
+			windowWidth = $(this).width();
+			checkSwiperExists();
+		});
+		
 	})(jQuery);
 		
 		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 		(function($){
 			
