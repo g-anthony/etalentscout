@@ -101,86 +101,103 @@
 		
 		var mobileView = 559;
 		var windowWidth = $(window).width();
-		var swiperExists = $('.swiper-featured-players').length;
-		var playersTitle = $('.featured-players-container .title-section');
-		var playersPagination = $('.featured-players-pagination');
-		var playersList = $('.featured-players-list');
-		var player = $('.featured-player');
-		var removeCounter = 0;
-		var displayCounter = 0;
+		var swiperExists = false;
+		var reDisplayCounter = 0;
 		
+
+		
+		var playersTitle = $('.featured-players-container .title-section');
+		var playersPagination;
+		var playersList = $('.featured-players-list');
+		
+		var playersContainer = playersList.parent().is('.featured-players-container');
+		var playersSwiperContainer = playersList.parent().is('.swiper-featured-players');
+	
+		var player = $('.featured-player');
 		checkSwiperExists();
+
+
+		
+		
+		
 
 		function displaySwiper(){
 			
-			playersList.addClass('swiper-wrapper');
-			player.addClass('swiper-slide flat');
-			$('.featured-player-inner-wrap').css('margin', 15);
-		
-			
-			window.featuredPlayerSwiper = $('.swiper-featured-players').swiper({
-				'speed': 750, 
-				'calculateHeight': true,
-				'pagination': '.featured-players-pagination',
-				'paginationClickable': true
-			});
-			
-			
-			
-			displayCounter++;
+
+				
+				playersList.addClass('swiper-wrapper').removeClass('list');
+				player.addClass('swiper-slide flat');
+				$('.featured-player .bg-primary').css({'marginLeft' :15, 'marginRight': 15});
+				playersTitle.wrap('<div class="title-swiper-pagination"></div>');
+				$('.title-swiper-pagination').append('<div class="featured-players-pagination swiper-pagination"></div>');
+				playersPagination = $('.featured-players-pagination');
+				
+				var featuredPlayerSwiper = $('.swiper-featured-players').swiper({
+					'speed': 750, 
+					'calculateHeight': true,
+					'pagination': '.featured-players-pagination',
+					'paginationClickable': true
+				});					
+
+				return featuredPlayerSwiper;
 
 		}//displaySwiper
+
+
 		
 		
 		function removeSwiper(){
 			
-			playersPagination.remove();
-			
-			playersTitle.unwrap();
-			
-			playersList.removeClass('swiper-wrapper');
-			playersList.removeAttr('style'); 
-			
-			player.removeClass('flat swiper-slide swiper-slide-visible swiper-slide-active');
-			player.removeAttr('style');
-				
-			$('.featured-player-inner-wrap').css('margin', 0);
-			
-			
 
-			removeCounter++;
-			
-		}//removeSwiper
+
+				playersPagination.remove();
+				
+				playersTitle.unwrap();
+				
+				playersList.removeClass('swiper-wrapper');
+				playersList.removeAttr('style'); 
+				
+				player.removeClass('flat swiper-slide swiper-slide-visible swiper-slide-active');
+				player.removeAttr('style');
+					
+				$('.featured-player .bg-primary').css({'margin': 0});				
+				
+				
+
+		}//removeSwiper 
 			
 
 		function checkSwiperExists(){
 			
-			if( windowWidth > mobileView && playersList.parent().is('.swiper-featured-players') ){
-				playersList.unwrap();
-				swiperExists = $('.swiper-featured-players').length;
+			if( windowWidth <= mobileView && swiperExists == false){
 				
-			}else if( windowWidth <= mobileView && playersList.parent().is('.featured-players-container') ){
 				playersList.wrap('<div class="swiper-featured-players"></div>');
-				swiperExists = $('.swiper-featured-players').length;
+				displaySwiper();
+				swiperExists = true;
+				
+
+				console.log('swiper exists');
+				
+			}else if( windowWidth > mobileView && swiperExists ){
+				playersList.unwrap();
+				removeSwiper();
+				swiperExists = false;
+				
+				console.log('swiper does not exists');
 			}
 			
-			if( windowWidth <= mobileView && swiperExists > 0 && displayCounter == 0){
-				//swiper exists, display swiper
-				displaySwiper();
-				
-			}else if( swiperExists == 0 && removeCounter == 0){
-				//swiper does not exists, remove swiper and loop through once
-				removeSwiper();
-			}
-
 		}//checkSwiperExists
 		
 		
 		$(window).resize(function(){
 			windowWidth = $(this).width();
 			checkSwiperExists();
+			
+			
 		});
 		
+		
+	
 	})(jQuery);
 		
 		
@@ -210,6 +227,8 @@
 		
 		(function($){	
 		
+		/*
+		
 		$('.accordion-js').accordion({
 			active: false, 
 			header: '.faq-block-question', 
@@ -223,9 +242,11 @@
 				easing: 'swing', 
 				duration: 350
 			}
+			
+			
 		
 		});
-		
+		*/
 	})(jQuery);
    
    </script>
