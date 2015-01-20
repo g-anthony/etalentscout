@@ -65,6 +65,11 @@ h4, h5, h6{
 /* NAVIGATION STYLES
 ==================================== */
 
+.navbar{
+	background-color: #e03627;
+	border: none;
+	margin-bottom: 0;
+}
 
 .navbar-nav{
 	width: 100%;
@@ -103,7 +108,7 @@ h4, h5, h6{
 
 .navbar-cta{
 	padding:0 15px;
-	margin-bottom:20px;
+	margin: 20px 0;
 }
 
 .navbar-cta .btn{ margin-top:20px; }
@@ -113,11 +118,6 @@ h4, h5, h6{
 .navbar-inverse .navbar-nav > li > a{color:#FFF;}
 
 .navbar-inverse .navbar-nav > li > a:hover{background: #c12f22;}
-
-.navbar-inverse{
-	background-color: #e03627;
-	border: none;
-}
 
 .navbar-toggle{
 	float:none;

@@ -22,17 +22,12 @@
         
                 <div class="navbar-header">
                 
-                    <h1 class="navbar-brand">
+                    <div class="navbar-brand">
                         <a href="<?php bloginfo( 'url' ); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="LoL Talent Scout Logo" title="LoL Talent Scout Logo">
                         </a>
-                    </h1><!--navbar-brand-->
+                    </div><!--navbar-brand-->
                   
-                     <div class="navbar-cta">
-                        <a class="btn navbar-cta-signup" href="">Sign up</a>
-                        <a class="btn navbar-cta-login" href="">Login</a>
-                    </div><!--navbar-cta-->
-                
                 	<div class="navbar-mobile">
                      <button type="button" class="navbar-toggle collapsed btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <i class="fa fa-navicon"></i>
@@ -51,6 +46,10 @@
                            );
                            wp_nav_menu( $args );
                      ?>
+                     <div class="navbar-cta">
+                        <a class="btn navbar-cta-signup" href="">Sign up</a>
+                        <a class="btn navbar-cta-login" href="">Login</a>
+                    </div><!--navbar-cta-->
                </div><!--/.navbar-collapse -->
                
            </div><!--container-->  
