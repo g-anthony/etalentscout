@@ -217,9 +217,6 @@ video#main-vid{
 
 .featured-players-container{ margin-bottom:40px; }
 
-
-
-
 .featured-wrapper{
 	padding: 68.5px 0;
 }
@@ -610,29 +607,39 @@ footer .col-sm-4 p{
 
 .wpcf7-form{
 	color: #333746;
-	width: 448px;
+	width: 500px;
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+	outline: none;
 }
 
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="email"],
 .wpcf7-form textarea,
 .wpcf7-form select{
+	width: 100%;
 	border: 2px solid #cccdce;
 	border-radius: 8px;
 	padding: 10px;
+	outline: none;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form textarea:focus,
+.wpcf7-form select:focus{
+	border: 2px solid #333746;
+	
 }
 
 .wpcf7-form select {
 	background: #FFF;
-	width: 448px;
 	height: 49px;
 }
 
 .wpcf7-form textarea {
-	width: 448px;
+	
 }
 
 

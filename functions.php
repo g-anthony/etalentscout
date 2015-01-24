@@ -59,7 +59,23 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+/* REGISTER SIDEBAR
+=============================*/
 
+register_sidebar( $args );
+
+$args = array(
+	
+	'name'				=> sprintf( __( 'Right-Sidebar %d' ), $i),
+	'id'					=> "sidebar-$i",
+	'description'       => 'Right sidebar',
+	'class'				=> 'float-right',
+	'before_widget'		=> '<div class="float-right">',
+	'after_widget'		=> "</div>",
+	'before_title'		=> '<h2 class="">',
+	'after_title'		=> "</h2>\n",
+	
+);
 
 
 

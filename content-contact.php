@@ -17,6 +17,15 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+        <div>
+        	<?php if ( ! dynamic_sidebar() ) : ?>
+            	<div class="right-sidebar">
+                	<p class="contact-sidebar-info">
+                    	Static info...
+                    </p>
+                </div>
+            <?php endif; ?>
+        </div>
 		<?php
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'etalentscout' ) . '</span>',
